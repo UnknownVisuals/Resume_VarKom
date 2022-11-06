@@ -39,10 +39,11 @@
         \item $Im(z) = 4$. \\ \\ \\ \\
     \end{itemize}
 
+    \newpage
     \begin{center}
         \textbf{Notasi Bilangan Kompleks}
     \end{center}
-
+    
     \begin{tikzpicture}
         \draw [ultra thin, lightgray] (-1,-1) grid (7,5);
         \draw [<->] (-1, 0) -- (7, 0) node[right] {$Re$};
@@ -52,7 +53,7 @@
         \draw [blue, dashed] (0,4) node[black, left] {$ y = 4 $}
             -| (6,0) node[black, below] {$ x = 6 $};
     \end{tikzpicture}
-    \\ \\ \\ \\
+    \\ \\
 
     Misal $ z_1 = ( x_1 , y_1 )  $ dan $ z_2 = ( x_2 , y_2 ) $, maka berlaku:
 
@@ -69,8 +70,9 @@
                         \nonumber\\
                         & = ( ax_1 \;,\; ay_1 )
     \end{align}
-    \\ \\ \\ \\
+    \\ \\
 
+    \newpage
     \begin{center}
         \textbf{Modulus Bilangan Kompleks}
     \end{center}
@@ -105,8 +107,9 @@
         \\\nonumber\\
         |z_1 z_2|                       &= |z_1| \cdot |z_2|
     \end{align}
-    \\ \\ \\ \\
+    \\ \\
 
+    \newpage
     \begin{center}
         \textbf{Sekawan/\textit{Konjugate} Bilangan Kompleks}
     \end{center}
@@ -141,4 +144,82 @@
             $Im(z) = \dfrac{z-z}{2i}$
     \end{itemize}
 
-    \end{document}
+    \newpage
+    \begin{center}
+        \textbf{Representasi Polar}
+    \end{center}
+
+    Misalkan $r$ dan adalah koordinat polar dari titik $(x, y)$ bilangan kompleks bukan nol $z = x + iy$. Karena $x = r cos \theta $ dan $y = r sin \theta$, maka bilangan Kompleks $z$ dapat
+    ditulis dalam bentuk polar:
+
+    \begin{align}
+        z = r(cos \theta + i sin \theta)\\\nonumber
+    \end{align}
+
+    dengan,
+    \begin{itemize}
+        \item r adalah modulus dari $z$:\\
+            $ r = |z| = \sqrt{x^2+y^2} $
+        \item $\theta$ adalah argumen dari $z$:\\
+            $ \theta = tan^{-1} \bigg(\dfrac{y}{x}\bigg) $
+    \end{itemize}
+
+
+    \begin{center}
+        \textbf{Representasi Euler}
+    \end{center}
+
+    Notasi matematis formal adalah bentuk Euler:
+    \begin{align}
+        z = re^{i\theta}\\\nonumber
+    \end{align}
+
+    Identitas Euler:
+    \begin{align}
+        e^{i\theta} = cos\theta + i sin\theta \\\nonumber
+    \end{align}
+
+    \begin{center}
+        \textbf{Perkalian dan Pangkat Bentuk Exponen}
+    \end{center}
+    \begin{align}
+        e^{i\theta_1} e^{i\theta_2} &= (cos\theta_1 + i sin\theta_1)(cos\theta_2 + i sin\theta_2)
+                                    \nonumber\\
+                                    &=(cos\theta_1 cos\theta_2 - sin\theta_1 sin\theta_2) + i(sin\theta_1cos\theta_2 + cos\theta_1 sin\theta_2)
+                                    \nonumber\\
+                                    &= cos(\theta_1 + \theta_2) + i\;sin(cos(\theta_1 + \theta_2))
+                                    \nonumber\\
+                                    &= e^{i(\theta_1 + \theta_2)}
+    \end{align}
+    
+    Maka, jika $z_1 = r_1e^{i\theta_1}$ dan $z_2 = r_2e^{i\theta_2}$, produk $z_1z_2$ memiliki bentuk eksponensial:
+    \begin{align}
+        z_1z_2  &= r_1e^{i\theta_1} r_2e^{i\theta_2}
+                \nonumber\\
+                &= r_1r_2e^{i\theta_1}e^{i\theta_2}
+                \nonumber\\
+                &= (r_1r_2)e^{i(\theta_1\theta_2)}
+    \end{align}
+    \begin{align}
+        \dfrac{z_1}{z_2}    &= \dfrac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}}
+                            \nonumber\\
+                            &= \dfrac{r_1}{r_2} \cdot \dfrac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}} \cdot \dfrac{e^{-i\theta_2}}{e^{-i\theta_2}}
+                            \nonumber\\
+                            &= \dfrac{r_1}{r_2} \cdot \dfrac{e^{i(\theta_1-\theta_2)}}{e^{i0}}
+                            \nonumber\\
+                            &= \dfrac{r_1}{r_2} e^{i(\theta_1-\theta_2)}
+    \end{align}
+    \begin{align}
+        z^{-1}  &= \dfrac{1}{z}
+                \nonumber\\
+                &= \dfrac{1e^{i0}}{re^{i\theta}}
+                \nonumber\\
+                &= \dfrac{1}{r} e^{i(0-\theta)}
+                \nonumber\\
+                &= \dfrac{1}{r} e^{-i\theta}
+    \end{align}
+    \begin{align}
+        z^n &= r^n e^{in\theta}
+    \end{align}
+
+\end{document}
