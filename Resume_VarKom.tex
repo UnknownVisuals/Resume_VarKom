@@ -8,6 +8,7 @@
     \begin{center}
         \textbf{BILANGAN KOMPLEKS}
     \end{center}
+    \leavevmode\\
 
     Bilangan Kompleks adalah bilangan yang dapat direpresentasikan sebagai \( x + iy \), dimana $x$ dan $y$ adalah bilangan real ($R$) dan $i$ adalah suatu bilangan imaginer dimana \( i = \sqrt{-1} \) dan \( i^2 = -1 \).\\
 
@@ -43,6 +44,7 @@
     \begin{center}
         \textbf{Notasi Bilangan Kompleks}
     \end{center}
+    \leavevmode\\
     
     \begin{tikzpicture}
         \draw [ultra thin, lightgray] (-1,-1) grid (7,5);
@@ -76,6 +78,7 @@
     \begin{center}
         \textbf{Modulus Bilangan Kompleks}
     \end{center}
+    \leavevmode\\
 
     Modulus atau nilai absolut bilangan kompleks $ z = x + iy $, didefinisikan sebagai bilangan real tidak negatif yang merupakan panjang vektor posisi dari $z$ (jarak antara $z$ dengan pusat sumbu).
     \\ \\
@@ -113,6 +116,7 @@
     \begin{center}
         \textbf{Sekawan/\textit{Konjugate} Bilangan Kompleks}
     \end{center}
+    \leavevmode\\
 
     Misalkan $ z = x + iy $, sekawan dari $z$ (notasi = $\overline{z}$) adalah pencerminan dari $z$ terhadap sumbu real ($R$).
     \\ \\ 
@@ -148,6 +152,7 @@
     \begin{center}
         \textbf{Representasi Polar}
     \end{center}
+    \leavevmode\\
 
     Misalkan $r$ dan adalah koordinat polar dari titik $(x, y)$ bilangan kompleks bukan nol $z = x + iy$. Karena $x = r cos \theta $ dan $y = r sin \theta$, maka bilangan Kompleks $z$ dapat
     ditulis dalam bentuk polar:
@@ -164,10 +169,13 @@
             $ \theta = tan^{-1} \bigg(\dfrac{y}{x}\bigg) $
     \end{itemize}
 
+    \leavevmode
+    \\ \\ \\ \\
 
     \begin{center}
         \textbf{Representasi Euler}
     \end{center}
+    \leavevmode\\
 
     Notasi matematis formal adalah bentuk Euler:
     \begin{align}
@@ -179,6 +187,7 @@
         e^{i\theta} = cos\theta + i sin\theta \\\nonumber
     \end{align}
 
+    \newpage
     \begin{center}
         \textbf{Perkalian dan Pangkat Bentuk Exponen}
     \end{center}
@@ -222,4 +231,111 @@
         z^n &= r^n e^{in\theta}
     \end{align}
 
+    \newpage
+    \begin{center}
+        \textbf{Fungsi Kompleks}
+    \end{center}
+    \leavevmode\\
+
+    Fungsi kompleks $f(z)$ menyatakan pemetaan dari bidang kompleks asal $z$ (domain) ke bidang kompleks hasil $w$ (range) dengan suatu pola yang diatur oleh $f(z)$.
+    \\
+
+    Contoh (titik ke titik):
+    \begin{align}
+        f(z)    &= 2z + 1
+                \nonumber\\
+                &= 2(x+iy) + 1
+                \nonumber\\
+                &= 2x + 2iy + 1
+                \nonumber\\
+                &= (2x + 1) + 2iy
+                \\\nonumber\\
+        Re(z)   &= u(x,y) = 2x + 1
+                \nonumber\\
+        Im(z)   &= v(x,y) = 2y
+                \nonumber
+    \end{align}
+    
+    Contoh (lintasan ke lintasan):
+    \begin{align}
+        f(z)    &= \overline{z}
+                \nonumber\\
+                &= x - iy
+                \\\nonumber\\
+        Re(z)   &= u(x,y) = x
+                \nonumber\\
+        Im(z)   &= v(x,y) = -y
+                \nonumber
+    \end{align}
+
+    Contoh (daerah ke daerah):
+    \begin{align}
+        f(z)    &= z + 1
+                \nonumber\\
+        D : |z| &<1
+                \nonumber\\
+        f(z)    &= z + 1
+                \nonumber\\
+        w       &= z + 1
+                \nonumber\\
+        z       &= w - 1
+                \nonumber\\
+        |w-1|   &< 1
+                \\\nonumber
+    \end{align}
+    \\
+
+    \begin{center}
+        \textbf{Titik Singular}
+    \end{center}
+    \leavevmode\\
+
+    Titik dimana $f(z)$ gagal dipetakan ke titik lain. Contoh pada fungsi \\ $f(z) = \dfrac{1}{z+1}$ gagal dipetakan pada titik asal $z=1$ karena $\dfrac{0}{0}$ tidak terdefinisi.
+
+    \newpage
+    \begin{center}
+        \textbf{Limit Fungsi Kompleks}
+    \end{center}
+    \leavevmode\\
+
+    Konsep limit pada fungsi kompleks $f(z)$ diperluas dari limit pada fungsi real $f(x)$ sebagai:
+    Pada fungsi kompleks $f(z)$, $\lim_{z \to z_0} f(z)$ bernilai $L$ atau
+    \begin{align}
+        \lim_{z \to z_0} f(z) = L
+    \end{align}
+    jika terdapat $\epsilon  > 0$ dan $\delta  > 0$ sedemikian sehingga jika ada $\epsilon$ yang memenuhi $|f(z) - L| \leq \epsilon$ , maka terilustrasi:
+    \begin{itemize}
+        \item $|z - z+0| \leq \delta$ adalah disk dengan pusat di $z_0$ dan jari-jari $\delta$
+        \item $|f(z) - L| \leq \epsilon$ adalah disk dengan pusat di $L$ dan jari-jari $\epsilon$
+    \end{itemize}
+    \leavevmode\\ \\
+
+    \begin{center}
+        \textbf{Turunan Fungsi Kompleks}
+    \end{center}
+    \leavevmode\\
+
+    Aturan penurunan pada fungsi riil berlaku pada fungsi kompleks. Jika $f(z)$ dan $g(z)$ adalah dua fungsi kompleks, maka:
+    \begin{itemize}
+        \item penjumlahan
+        \begin{align}
+            \frac{d}{dz}(f(z)+g(z)) &= f'(z) + g'(z)
+        \end{align}
+        \item perkalian skalar
+        \begin{align}
+            \frac{d}{dz}(kf(z)) &= kf'(z)
+        \end{align}
+        \item aturan rantai
+        \begin{align}
+            \frac{d}{dz}(f(g(z))) &= f'(g(z)) g'(z)
+        \end{align}
+        \item aturan perkalian
+        \begin{align}
+            \frac{d}{dz}[f(z)g(z)] &= f'(z)g(z) + g'(z)f(z)
+        \end{align}
+        \item aturan pembagian
+        \begin{align}
+            \frac{d}{dz}\frac{f(z)}{g(z)} &= \frac{f'(z)g(z) - g'(z)f(z)}{g^2(z)}
+        \end{align}
+    \end{itemize}
 \end{document}
