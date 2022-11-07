@@ -338,4 +338,114 @@
             \frac{d}{dz}\frac{f(z)}{g(z)} &= \frac{f'(z)g(z) - g'(z)f(z)}{g^2(z)}
         \end{align}
     \end{itemize}
+
+    \newpage
+    \begin{center}
+        \textbf{Persamaan Cauchy-Riemann (PCR)}
+    \end{center}
+    \leavevmode\\
+
+    Syarat terpenuhi Persamaan Cauchy-Riemann (PCR):\\
+
+    Diketahui:
+    \begin{align}
+        f(x,y) = x + iy
+        \nonumber
+    \end{align}
+    
+    Memenuhi Persamaan Cauchy-Riemann (PCR), jika:
+    \begin{align}
+        \dfrac{\partial U}{\partial x} = \dfrac{\partial V}{\partial y}
+    \end{align}
+    \begin{center}
+        dan
+    \end{center}
+    \begin{align}
+        \dfrac{\partial U}{\partial y} = -\dfrac{\partial V}{\partial x}
+    \end{align}
+
+    dimana:
+    \begin{itemize}
+        \item U adalah bagian $Re f(x,y)$, dan
+        \item V adalah bagian $Im f(x,y)$.
+    \end{itemize}
+
+    Jika PCR tidak terpenuhi maka $f(x,y)$ tidak differentiable, atau $f'(x,y)$ tidak ada.
+    \leavevmode\\ \\
+
+    \begin{center}
+        \textbf{Sekawan Harmonik}
+    \end{center}
+    \leavevmode\\
+    
+    PCR digunakan untuk mencari Sekawan Harmonik.\\
+
+    Misal:
+    \begin{align}
+        f(x + iy) = xy + iV(x, y)
+        \nonumber
+    \end{align}
+
+    Tentukan $V(x,y)$ sekawan harmonik dari $U = xy$.\\
+    Jawab:
+    \begin{align}
+        U_x     &= y    \;&\;   U_y     &= x
+        \nonumber\\
+        U_{xx}  &= 0    \;&\;   U_{yy}  &= 0   
+        \nonumber\\\nonumber\\
+        U_{xx}+U_{yy}&=0
+        \nonumber\\
+        0 + 0   &=0
+        \nonumber
+    \end{align}
+    Terbukti Harmonik.\\
+
+    \begin{align}
+        U_x &= y                                \;&\;   U_y &= x
+        \nonumber\\
+        V_x &= \dfrac{\partial V}{\partial x}   \;&\;   V_y&= \dfrac{\partial V}{\partial y}
+        \nonumber
+    \end{align}
+
+    PCR Syarat 1:
+    \begin{align}
+        U_x &= Vy
+        \nonumber\\
+        y   &= \dfrac{\partial V}{\partial y}
+        \nonumber\\
+        V   &= \dfrac{1}{2} y^2 + g(x)
+        \nonumber
+    \end{align}
+
+    Turunkan $V$ yang baru diperoleh terhadap $x$:
+    \begin{align}
+        \dfrac{\partial V}{\partial x} = g'(x)
+        \nonumber
+    \end{align}
+
+    PCR Syarat 2:
+    \begin{align}
+        U_y &= -Vx
+        \nonumber\\
+        x   &= -\dfrac{\partial V}{\partial x}
+        \nonumber\\
+        x   &= g'(x)
+        \nonumber
+    \end{align}
+
+    \begin{align}
+        g'(x)   &= x
+        \nonumber\\
+        g(x)    &= \dfrac{1}{2} x^2 + c
+        \nonumber
+    \end{align}
+    
+    Sehingga:
+    \begin{align}
+        V   &= \dfrac{1}{2} x^2 + \dfrac{1}{2} y^2 + c
+        \nonumber
+    \end{align}
+
+    dengan c suatu konstanta.
+
 \end{document}
