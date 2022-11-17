@@ -76,6 +76,136 @@
 
     \newpage
     \begin{center}
+        \textbf{Operasi Aritmatika Pada Bilangan Kompleks}
+    \end{center}
+    \leavevmode\\
+
+    \textbf{1.\>Penjumlahan Bilangan Kompleks\\}
+
+    Misalkan dua bilangan kompleks:
+    \begin{align}
+        z_1 &= a + bi
+        \nonumber\\
+        z_2 &= c + di
+        \nonumber
+    \end{align}
+
+    \begin{itemize}
+        \item $z_1 = 0$ jika dan hanya jika $a = 0$ dan $b = 0$
+        \item $z_1 = z_2$ jika dan hanya jika $a = b$ dan $b = d$
+    \end{itemize}
+
+    \textbf{Contoh:}
+    \begin{align}
+        2 + 5i = \dfrac{4}{2} + \dfrac{10}{2}i \nonumber
+    \end{align}
+    \begin{itemize}
+        \item Jika $z_1 \neq z_2$ maka $z_1$ tidak dapat dibandingkan lebih besar atau lebih kecil dari $z_2$
+    \end{itemize}
+    \leavevmode
+    \\\\
+
+    \textbf{2.\>Perkalian bilangan kompleks dengan skalar\\}
+    
+    Jika:
+    \begin{align}
+        z_1 = (a + bi) \nonumber
+    \end{align}
+
+    Maka:
+    \begin{align}
+        k \cdot z_1 = k \cdot (a + bi) = ka + kbi \nonumber
+    \end{align}
+
+    Contoh:
+    \begin{align}
+        z_1 &= 2 + 5i
+        \nonumber\\
+        k   &= 2
+        \nonumber
+    \end{align}
+    
+    Jawab:
+    \begin{align}
+        k \cdot z_1 &= 2 \cdot (2 + 5i)
+                    \nonumber\\
+                    &= 4 + 10i
+                    \nonumber
+    \end{align}
+    \leavevmode
+    \newpage
+
+    \textbf{3.\>Perkalian dua bilangan kompleks\\}
+    
+    Jika:
+    \begin{align}
+        z_1 &= a + bi
+        \nonumber\\
+        z_2 &= c + di
+        \nonumber
+    \end{align}
+    
+    Maka:
+    \begin{align}
+        z_1 \cdot z_2   &= (a + bi)\cdot(c + di)
+                        \nonumber\\
+                        &= (ac - bd) + (ad + bc)i
+                        \nonumber
+    \end{align}
+    
+    Contoh:
+    \begin{align}
+        z_1 &= 1 + 2i
+        \nonumber\\
+        z_2 &= 3 + 5i
+        \nonumber
+    \end{align}
+    
+    Jawab:
+    \begin{align}
+        z_1 \cdot z_2   &= (1 + 2i) \cdot (3 + 5i)
+                        \nonumber\\
+                        &= (3 - 10) + (5 + 6)i
+                        \nonumber\\
+                        &= -7 + 11i
+                        \nonumber
+    \end{align}
+
+    \textbf{4.\>Pembagian dua bilangan kompleks\\}
+    
+    Jika
+    \begin{align}
+        z_1 &= a + bi
+        \nonumber\\
+        z_2 &= c + di
+        \nonumber
+    \end{align}
+    
+    Maka $\dfrac{z_1}{z_2}$ menyatakan pembagian bilangan kompleks dengan pembilang $z_1$ dan penyebut $z_2$. Penyebut dikalikan sekawannya $\dfrac{z_1}{z_2} \cdot \dfrac{?}{z_2}$. Agar nilai semula tidak berubah, maka pembilang juga harus dikalikan dengan bilangan yang sama: $\dfrac{z_1}{z_2} \cdot \dfrac{\overline{z_2}}{z_2}$. Sekarang pembilang bernilai riil dan pembagian dapat dilakukan.
+
+    Contoh: 
+    \begin{align}
+        z_1 &= 1 + 2i
+        \nonumber\\
+        z_2 &= 2 + 3i
+        \nonumber 
+    \end{align}
+
+    Maka:
+    \begin{align}
+        \dfrac{z_1}{z_2}    &= \dfrac{1+2i}{2+3i}
+                            \nonumber\\
+                            &= \dfrac{1+2i}{2+3i} \cdot \dfrac{2-3i}{2-3i}
+                            \nonumber\\
+                            &= \dfrac{(2+6)+(-3+4)i}{2^2+3^2}
+                            \nonumber\\
+                            &= \dfrac{8}{13} + \dfrac{1}{13}i
+                            \nonumber
+    \end{align}
+
+
+    \newpage
+    \begin{center}
         \textbf{Modulus Bilangan Kompleks}
     \end{center}
     \leavevmode\\
@@ -158,7 +288,10 @@
     ditulis dalam bentuk polar:
 
     \begin{align}
-        z = r(cos \theta + i sin \theta)\\\nonumber
+        z &= r(cos \theta + i sin \theta)
+        \\\nonumber\\
+        z &= r \angle \theta
+        \\\nonumber
     \end{align}
 
     dengan,
@@ -168,10 +301,42 @@
         \item $\theta$ adalah argumen dari $z$:\\
             $ \theta = tan^{-1} \bigg(\dfrac{y}{x}\bigg) $
     \end{itemize}
+    \leavevmode\\
 
-    \leavevmode
-    \\ \\ \\ \\
+    Contoh:
+    \begin{align}
+        z = 3 + 4i \nonumber
+    \end{align}
 
+    Modulus:
+    \begin{align}
+        r   &= \sqrt{a^2 + b^2}
+            \nonumber\\
+            &= \sqrt{3^2 + 4^2}
+            \nonumber\\
+            &= 5
+            \nonumber
+    \end{align}
+    
+    Argumen:
+    \begin{align}
+        \theta  &= tan^{-1} \dfrac{b}{a}
+                \nonumber\\
+                &= tan^{-1} \dfrac{4}{3}
+                \nonumber\\
+                &= 53,1^{\circ}
+                \nonumber
+    \end{align}
+
+    \begin{align}
+        z   &= 3 + 4i
+            \nonumber\\
+            &= 5(\cos 53,1^{\circ} + \sin 53,1^{\circ})
+            \nonumber\\
+            &= 5 \angle 53,1^{\circ}
+    \end{align}
+
+    \newpage
     \begin{center}
         \textbf{Representasi Euler}
     \end{center}
@@ -185,6 +350,41 @@
     Identitas Euler:
     \begin{align}
         e^{i\theta} = cos\theta + i sin\theta \\\nonumber
+    \end{align}
+    \leavevmode\\
+
+    Contoh:
+    \begin{align}
+        z = 3 + 4i \nonumber
+    \end{align}
+
+    Modulus:
+    \begin{align}
+        r   &= \sqrt{a^2 + b^2}
+            \nonumber\\
+            &= \sqrt{3^2 + 4^2}
+            \nonumber\\
+            &= 5
+            \nonumber
+    \end{align}
+    
+    Argumen:
+    \begin{align}
+        \theta  &= tan^{-1} \dfrac{b}{a}
+                \nonumber\\
+                &= tan^{-1} \dfrac{4}{3}
+                \nonumber\\
+                &= 53,1^{\circ}
+                \nonumber
+    \end{align}
+
+    \begin{align}
+    z                   &= 3 + 4i
+                        \nonumber\\
+                        &= 5e^{i 53,1^{\circ}}
+                        \nonumber\\
+    5e^{i 53,1^{\circ}} &= 5(\cos 53,1^{\circ} + \sin 53,1^{\circ})
+                        \nonumber
     \end{align}
 
     \newpage
@@ -305,7 +505,7 @@
     \end{align}
     jika terdapat $\epsilon  > 0$ dan $\delta  > 0$ sedemikian sehingga jika ada $\epsilon$ yang memenuhi $|f(z) - L| \leq \epsilon$ , maka terilustrasi:
     \begin{itemize}
-        \item $|z - z+0| \leq \delta$ adalah disk dengan pusat di $z_0$ dan jari-jari $\delta$
+        \item $|z - z_0| \leq \delta$ adalah disk dengan pusat di $z_0$ dan jari-jari $\delta$
         \item $|f(z) - L| \leq \epsilon$ adalah disk dengan pusat di $L$ dan jari-jari $\epsilon$
     \end{itemize}
     \leavevmode\\ \\
@@ -315,6 +515,139 @@
     \end{center}
     \leavevmode\\
 
+    Perhitungan turunan $f(z)$ dapat melihat dari kemungkinan notasi $f(z)$:
+    \begin{itemize}
+        \item $f(z)$ dinyatakan secara eksplisit peubah $z$.
+        \item $f(z)$ dinyatakan : $f(z) = U(x,y) + iV(x,y)$
+        \item $f(z)$ dinyatakan : $f(z) = U(i,\theta)+ iV(i,\theta)$
+    \end{itemize}
+    \leavevmode\\
+
+    $f(z)$ dinyatakan $f(z) = U(x,y) + iV(x,y)$ dapat diturunkan di $z_0 = x_0 + iy_0$ bila berlaku \textbf{Persamaan Cauchy Riemann (PCR)}:\\
+    \begin{align}
+        Ux (x_0 + y_0)  &= Vy (x_0 + y_0)
+        \nonumber\\
+        Uy (x_0 + y_0)  &= -Vx (x_0 + y_0)
+        \nonumber\\
+        \nonumber\\
+                f(z_0)  &= Ux (x_0 + y_0) + i Vy (x_0 + y_0)
+    \end{align}
+    \leavevmode\\
+
+    \newpage
+    Contoh:
+
+    Apakah $f(z)=e^x \cdot e^{iy}$ memiliki turunan di titik $z_o = 1+i$?\\
+    
+    Jawab:
+    
+    $f'(1+i)$ ada jika:
+    \begin{align}
+        Ux(1+i) &= Vy(1+i)
+        \nonumber\\
+        Uy(1+i) &= -Vx(1+i)
+        \nonumber
+    \end{align}
+    
+    \begin{align}
+        f(z)    &= f(z)=e^x \cdot e^{iy}
+                \nonumber\\
+                &= e^x(\cos y + i \sin y)
+                \nonumber\\
+                &= e^x \cos y + i e^x \sin y
+                \nonumber\\
+                \nonumber\\
+        Ux(x,y) &= e^x \cos y
+                \nonumber\\
+        Uy(x,y) &= e^x (-\sin y)
+                \nonumber\\
+                &= e^x \sin y
+                \nonumber\\
+                \nonumber
+    \end{align}
+
+    U(x,y) dan V(x,y) memenuhi Persamaan Cauchy Riemann (PCR). Jadi $f'(1+i)$ ada:
+    \begin{align}
+        f'(1+i) &= f'(1,1)
+                \nonumber\\
+                &= e'cos 1 + i e'sin 1
+                \nonumber\\
+                \nonumber
+    \end{align}
+
+
+    $f(z)$ dinyatakan sebagai $f(z) = U(i,\theta)+ iV(i,\theta)$
+    
+    PCR dalam koordinat polar:
+    \begin{align}
+        Ur  &= \dfrac{1}{r}V\theta
+        \nonumber\\
+        \dfrac{1}{r}U\theta &= -Vr
+        \nonumber\\
+        \nonumber
+    \end{align}
+
+    Turunan dari f(z) dinyatakan :
+    \begin{align}
+        f'(z) = e^{-i\theta}(Ur+iVr)
+    \end{align}
+
+    \newpage
+    \textbf{Metode Milne-Thomson}
+    \leavevmode\\
+    
+    Jika fungsi terurai $f(x+iy)=u(x,y) + iv(x,y)$  differentiable atau holomorfik, maka $f(x+iy)$ dapat dijadikan bentuk kompak $f(z)$.
+
+    \begin{itemize}
+        \item Tentukan $f'(x+iy)$ yaitu $f'(x+iy) = \dfrac{\partial u}{x} + i \dfrac{\partial v}{x}$
+        \item Ditinjau suku $\dfrac{\partial u}{x}$
+        \item Substitusi $\dfrac{\partial u}{x} \rightarrow  f'(z), x \rightarrow z$ dan $y \rightarrow 0$
+        \item Selesaikan $f'(z)$ untuk memperoleh $f(z)$
+        \item Cari konstanta $c$ pada $f(z)$ dengan substitusi $z = x +iy$ pada $f(z)$ dan membandingkannya dengan $f(x+iy)$ semula. 
+    \end{itemize}
+
+    Contoh:
+    \begin{align}
+        f(z)    &= e^x \cos y + i e^x \sin y
+                \nonumber
+    \end{align}
+    \begin{align}
+        u_x     &= e^x \cos y       &v_x &= e^x \sin y
+                \nonumber\\  
+        u_y     &= -e^x \sin y      &v_y &= e^x \cos y
+                \nonumber
+    \end{align}
+    \begin{align}
+        u_x     &= v_x
+                \nonumber\\ 
+        u_y     &= -v_y
+                \nonumber
+    \end{align}
+    \begin{align}
+        f(z)    &= e^x \cos y + i e^x \sin y
+                \nonumber\\ 
+                &= e^x (\cos y + i \sin y)
+                \nonumber\\ 
+                &= e^x \cdot e^iy
+                \nonumber\\ 
+                &= e^{x+iy}
+                \nonumber\\ 
+                &= e^z
+                \nonumber\
+    \end{align}
+
+    $u_x  = e^x cos y \rightarrow$ ganti $x$ dengan $z$
+
+    $y$ dengan $0$
+    \begin{align}        
+        f'(z)   &= e^z cos 0
+                \nonumber\\
+                &= e^z \rightarrow f(z) = e^z
+                \nonumber
+    \end{align}
+
+
+    \newpage
     Aturan penurunan pada fungsi riil berlaku pada fungsi kompleks. Jika $f(z)$ dan $g(z)$ adalah dua fungsi kompleks, maka:
     \begin{itemize}
         \item penjumlahan
@@ -338,6 +671,7 @@
             \frac{d}{dz}\frac{f(z)}{g(z)} &= \frac{f'(z)g(z) - g'(z)f(z)}{g^2(z)}
         \end{align}
     \end{itemize}
+
 
     \newpage
     \begin{center}
@@ -373,6 +707,137 @@
     Jika PCR tidak terpenuhi maka $f(x,y)$ tidak differentiable, atau $f'(x,y)$ tidak ada.
     \leavevmode\\ \\
 
+    Contoh: 
+    
+    Tentukan turunan fungsi $f(x,y) = x^2 -y^2 + i2xy$
+    \begin{align}
+        U_x &= 2x        &V_x &= 2y
+        \nonumber\\
+        U_y &= -2y       &V_y &= 2x
+        \nonumber
+    \end{align}
+    
+    PCR terpenuhi
+    \begin{align}
+        f'(x+iy)    &= U_x +iV_x
+                    \nonumber\\
+                    &= 2x +i2y
+                    \nonumber\\
+                    &= 2(x+iy)
+                    \nonumber
+    \end{align}
+
+    Jika dilakukan pada bentuk kompak:
+    \begin{align}
+        f(x+iy)     &= x^2 -y^2 + i2xy
+        \nonumber\\
+        f(z)        &= z^2
+        \nonumber\\
+        f'(x+iy)    &= 2(x+iy)
+        \nonumber\\
+        f'(z)       &= 2z
+        \nonumber 
+    \end{align}
+    \leavevmode\\ \\
+
+
+    \newpage
+    \begin{center}
+        \textbf{Fungsi Harmonik}
+    \end{center}
+    \leavevmode\\
+    
+    Misalkan $u(x,y)$ adalah fungsi 2 peubah $u(x,y)$ dikatakan fungsi harmonik jika $u_{xx} + u_{yy}$. Buktikan bahwa $u(x,y) = 3x^2 - 3y^2 + 2x$ adalah harmonik?
+    \begin{align}
+        u_x     &= 6x-0+2        &u_y     &= -6y
+        \nonumber\\
+        u_{xx}  &= 6             &u_{yy}  &= -6
+        \nonumber\\
+        \nonumber\\
+        u_{xx} + u_{yy} &= 6 + (-6)
+        \nonumber\\
+                        &= 0
+        \nonumber\\
+                        &(harmonik)
+        \nonumber
+    \end{align}
+
+    Contoh: 
+    
+    $H(x,y) =2x^3 -kyx^2$ tentukan nilai $k$ sehingga $H(x,y)$ menjadi fungsi harmonik
+    \begin{align}
+        H_x  &= 6x^2-ky^2    &H_y    &= 0-2kxy
+        \nonumber\\
+        H_{xx} &= 12x          &H_{yy} &= -2kx
+        \nonumber
+    \end{align}
+    
+    Agar harmonik
+    \begin{align}
+        H_{xx} + H_{yy} &= 0
+        \nonumber\\
+        12x + (-2kx)    &= 0
+        \nonumber\\
+        12 - 2k         &= 0
+        \nonumber\\
+        -2k             &= -12
+        \nonumber\\
+        k               &= 6
+        \nonumber
+    \end{align} 
+
+    \newpage
+    \begin{center}
+        \textbf{Fungsi Analitik}
+    \end{center}
+    \leavevmode\\
+    
+    Fungsi $f(z)$ disebut analitik pada $D$ (himpunan buka) bila $f'(z)$ ada untuk $z \epsilon D$ atau $f(z)$. Berlaku PCR untuk $z \epsilon D$.
+    \begin{itemize}
+        \item \textbf{Differentiable} $\rightarrow$ Fungsi $f(z)$ dikatakan terdifferentiable di $z=z_0$ jika $f'(z)$ ada untuk $z=z_0$.
+        \item \textbf{Analitik} $\rightarrow$ Fungsi $f(z)$ dikatakan analitik pada suatu titik $z$ jika $f'(z)$ ada untuk $z=z_0$ dan sekitarnya.
+    \end{itemize}
+    
+    Contoh:
+    
+    Periksa apakah $f(z)$ fungsi analitik pada $D$.
+    \begin{align}
+        f(z)    &= \dfrac{z^2 + 1}{z - 2}
+        \nonumber\\
+        D       &= |z + 1| < 1
+        \nonumber
+    \end{align}
+
+    \begin{align}
+        f'(z)   &= \dfrac{g'h - h'g}{h^2}
+            \nonumber\\
+            g   &= z^2+1
+            \nonumber\\
+            h   &= z-2
+            \nonumber
+    \end{align}
+
+    $f(z)$ tidak ada $\rightarrow$ $f'(z)$ tidak ada.
+    \begin{align}
+        z + 1     &< 1
+        \nonumber\\
+        z - (-1)  &< 1
+        \nonumber\\
+        z - z0    &< r
+        \nonumber
+    \end{align}
+
+    Himpunan $z$ yang jaraknya terhadap $z_0$ kurang dari $r$.
+    \\
+
+    Misal  $u(x,y)$ dan  $v(x,y)$ pada $D$ dan berlaku PCR maka $v(x,y)$ disebut konjugate (sekawan) harmonik dari $u(x,y)$ atau sebaliknya. 
+    \begin{itemize}
+        \item $u(x,y)$ dan $v(x,y)$ masing-masing punya fungsi harmonik.
+        \item $u_x = v_y$ dan $u_y = -v_x$
+    \end{itemize}
+
+
+    \newpage
     \begin{center}
         \textbf{Sekawan Harmonik}
     \end{center}
@@ -447,5 +912,123 @@
     \end{align}
 
     dengan c suatu konstanta.
+
+
+    \newpage
+    \begin{center}
+        \textbf{Integral Kompleks}
+    \end{center}
+    \leavevmode\\
+
+    \textbf{Lintasan 1}
+    \\
+    
+    Misal $z(t) : 1 \rightarrow C$ merupakan fungsi kompleks dengan domain real, $1=[a,b]$, maka fungsi $z(t)$ dinyatakan:
+    \begin{align}
+        z(t) &= x(t) + iy(t)
+        \nonumber\\
+        &a \leq t \leq b
+        \nonumber
+    \end{align}
+    
+
+    $z(t)$ merupakan lintasan dari $A$ ke $B$. Rotasi : $Z$\\
+    
+    Contoh:
+    
+    Gambarkan lintasan  $C$ untuk $-1 \leq t \leq 1$ yang dinyatakan
+    \begin{align}
+        z(t)    &= t + it^2
+        \nonumber\\
+        x(t)    &= t \rightarrow y= x^2
+        \nonumber\\
+        y(t)    &= t^2
+        \nonumber
+    \end{align}
+    \leavevmode\\
+
+    \textbf{Lintasan 2}
+    \\
+
+    Turunan 2 integral dari persamaan lintasan dinyatakan sebagai berikut:
+    $z(t) =x(t) +i y(t) ; a \leq t \leq b$
+    \begin{align}
+        \dfrac{dz}{dt}  &= z'(t)
+        \nonumber\\
+        \dfrac{dz}{dt}  &= x'(t) + iy'(t)
+        \nonumber\\
+        \int_{a}^{b} z(t) \,dt &=\int_{a}^{b} x(t) \,dt + i \int_{a}^{b} y(t) \,dt 
+        \nonumber
+    \end{align}
+    \leavevmode\\
+
+    Contoh:
+
+    Hitung turunan dan integral dari persamaan lintasan berikut:
+    \begin{align}
+        z(t) &= t + it^2
+        \nonumber\\
+        -1& \leq t \leq 1
+        \nonumber
+    \end{align}
+    \begin{align}
+        z'(t)   &= 1 + 2it
+        \nonumber\\
+        \int_{-1}^{1} t(t) \,dt &= \int_{-1}^{1} [t + it^2] \,dt
+        \nonumber\\
+                                &= [\dfrac{1}{2}t^2 + \dfrac{i}{3}t^3]_{-1} ^1
+        \nonumber\\
+                                &= \dfrac{2}{3}i
+        \nonumber
+    \end{align}
+    \leavevmode\\
+
+    \textbf{Jenis Lintasan:}
+    \begin{enumerate}
+        \item Lintasan buka : Bila ujung lintasan tidak berimpit
+        \item Lintasan tutup : Bila ujung lintasan berimpit (Sederhana \& tidak sederhana)
+    \end{enumerate}
+    \leavevmode\\
+
+    \textbf{Integral Lintasan:}
+
+    Integral dari fungsi kompleks $f(z)$ atas lintasan $C$ disebut integral lintasan atau integral garis atau integral sountour dan dinyatakan:
+    \leavevmode\\ \\
+
+    \textbf{Integral tergantung lintasan 1:}
+    \begin{enumerate}
+        \item Nyatakan lintasan C dalam $z(t) =t +it2 ; -1 \leq t \leq 1$
+        \item Cari turunan $z(t) z'(t)$
+        \item Substitusi fungsi $f(z)$ terhadap fungsi $z (t)  f[z(t)]$
+        \item Integrasikan  $f[z(t)] z'(t)$ terhadap $t$
+    \end{enumerate}
+    \leavevmode\\
+
+    \textbf{Titik Interior:} 
+	
+    Titik to disebut titik interior dari lintasan tutup $C$ bila terdapat lingkungan dari to yang termuat di dalam $C$.
+
+    Lintasan tutup $C$ arah positif : bila berjalan menyusuri lintasan maka daerah yang dilingkupi oleh $C$ terletak disebelah kiri.
+    \leavevmode\\
+
+    \newpage
+    \textbf{Integral Cauchy}
+
+    Misal lintasan $C$ tutup dengan arah berlawanan jarum jam (arah positif),  $z_0$ : interior dari $C$ dan $f(z)$ analitik pada daerah yang dilingkupi oleh $C$ maka integral cauchy:
+    \leavevmode\\
+
+    Jika:
+    \begin{enumerate}
+        \item $C$ lintasan tutup arah $(t)$
+        \item $g(z) = \dfrac{f(z)}{z-z_0} , f(z)$ analitik di lintasan $C$
+        \item $z_0$ titik interior dari limit $C$
+    \end{enumerate}
+    \leavevmode\\
+
+    Maka:
+    \begin{align}
+        \oint_{c}^{} \dfrac{f(z)}{z-z_0} \,dt = 2\pi i f(z_0)
+        \nonumber
+    \end{align}
 
 \end{document}
