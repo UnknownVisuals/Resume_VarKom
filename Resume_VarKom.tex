@@ -3,8 +3,15 @@
 \usepackage{amsmath}
 \usepackage{relsize}
 \usepackage{tikz}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage[a4paper, margin = 3cm]{geometry}
+
+
 
 \begin{document}
+\fontsize{14pt}{0}
+\onehalfspacing
 
 \begin{center}
     \textbf{BILANGAN KOMPLEKS}
@@ -15,7 +22,7 @@ Bilangan Kompleks adalah bilangan yang dapat direpresentasikan sebagai \( x + iy
 
 Bilangan Kompleks biasanya ditulis dalam bentuk:
 \begin{align}
-    x = x + iy
+    \boxed{z = x + iy}\nonumber
 \end{align}
 
 \>dimana,
@@ -33,6 +40,7 @@ Contoh:
       & = 6 + i \times 4
     \nonumber                            \\
       & = 6 + 4i
+    \nonumber
 \end{align}
 
 maka:
@@ -40,6 +48,8 @@ maka:
     \item $Re(z) = 6$, dan
     \item $Im(z) = 4$. \\ \\ \\ \\
 \end{itemize}
+
+
 
 \newpage
 \begin{center}
@@ -64,16 +74,20 @@ Misal $ z_1 = ( x_1 , y_1 )  $ dan $ z_2 = ( x_2 , y_2 ) $, maka berlaku:
     z_1 + z_2     & = ( x_1 \;,\; y_1 ) + ( x_2 \;,\; y_2 )
     \nonumber                                                       \\
                   & = ( x_1 + x_2 \;,\; y_1 + y_2 )
-    \\\nonumber\\
+    \nonumber                                                       \\
+    \nonumber                                                       \\
     z_1 \cdot z_2 & = ( x_1 \;,\; y_1 ) \cdot ( x_2 \;,\; y_2 )
     \nonumber                                                       \\
                   & = ( x_1 x_2 - y_1 y_2 \;,\; x_1 y_2 + x_2 y_1 )
-    \\\nonumber\\
+    \nonumber                                                       \\
+    \nonumber                                                       \\
     a \cdot z_1   & = a \cdot ( x_1 \;,\; y_1 )
     \nonumber                                                       \\
                   & = ( ax_1 \;,\; ay_1 )
+    \nonumber
 \end{align}
-\\ \\
+
+
 
 \newpage
 \begin{center}
@@ -81,128 +95,135 @@ Misal $ z_1 = ( x_1 , y_1 )  $ dan $ z_2 = ( x_2 , y_2 ) $, maka berlaku:
 \end{center}
 \leavevmode\\
 
-\textbf{1.\>Penjumlahan Bilangan Kompleks\\}
+\begin{enumerate}
+    \item   \textbf{Penjumlahan Bilangan Kompleks}\\
 
-Misalkan dua bilangan kompleks:
-\begin{align}
-    z_1 & = a + bi
-    \nonumber      \\
-    z_2 & = c + di
-    \nonumber
-\end{align}
+          Misalkan dua bilangan kompleks:
+          \begin{align}
+              z_1 & = a + bi
+              \nonumber      \\
+              z_2 & = c + di
+              \nonumber
+          \end{align}
 
-\begin{itemize}
-    \item $z_1 = 0$ jika dan hanya jika $a = 0$ dan $b = 0$
-    \item $z_1 = z_2$ jika dan hanya jika $a = b$ dan $b = d$
-\end{itemize}
+          \begin{itemize}
+              \item $z_1 = 0$ jika dan hanya jika $a = 0$ dan $b = 0$
+              \item $z_1 = z_2$ jika dan hanya jika $a = b$ dan $b = d$
+          \end{itemize}
 
-\textbf{Contoh:}
-\begin{align}
-    2 + 5i = \dfrac{4}{2} + \dfrac{10}{2}i \nonumber
-\end{align}
-\begin{itemize}
-    \item Jika $z_1 \neq z_2$ maka $z_1$ tidak dapat dibandingkan lebih besar atau lebih kecil dari $z_2$
-\end{itemize}
-\leavevmode
-\\\\
+          \textbf{Contoh:}
+          \begin{align}
+              2 + 5i = \dfrac{4}{2} + \dfrac{10}{2}i \nonumber
+          \end{align}
+          \begin{itemize}
+              \item Jika $z_1 \neq z_2$ maka $z_1$ tidak dapat dibandingkan lebih besar atau lebih kecil dari $z_2$
+          \end{itemize}
+          \leavevmode
+          \\\\
 
-\textbf{2.\>Perkalian bilangan kompleks dengan skalar\\}
+    \item   \textbf{Perkalian bilangan kompleks dengan skalar}\\
 
-Jika:
-\begin{align}
-    z_1 = (a + bi) \nonumber
-\end{align}
+          Jika:
+          \begin{align}
+              z_1 = (a + bi) \nonumber
+          \end{align}
 
-Maka:
-\begin{align}
-    k \cdot z_1 = k \cdot (a + bi) = ka + kbi \nonumber
-\end{align}
+          Maka:
+          \begin{align}
+              k \cdot z_1 & = k \cdot (a + bi)
+              \nonumber                          \\
+                          & = ka + kbi \nonumber
+          \end{align}
 
-Contoh:
-\begin{align}
-    z_1 & = 2 + 5i
-    \nonumber      \\
-    k   & = 2
-    \nonumber
-\end{align}
+          Contoh:
+          \begin{align}
+              z_1 & = 2 + 5i
+              \nonumber      \\
+              k   & = 2
+              \nonumber
+          \end{align}
 
-Jawab:
-\begin{align}
-    k \cdot z_1 & = 2 \cdot (2 + 5i)
-    \nonumber                        \\
-                & = 4 + 10i
-    \nonumber
-\end{align}
-\leavevmode
-\newpage
+          Jawab:
+          \begin{align}
+              k \cdot z_1 & = 2 \cdot (2 + 5i)
+              \nonumber                        \\
+                          & = 4 + 10i
+              \nonumber
+          \end{align}
+          \leavevmode
+          \newpage
+    \item   \textbf{Perkalian dua bilangan kompleks}\\
 
-\textbf{3.\>Perkalian dua bilangan kompleks\\}
+          Jika:
+          \begin{align}
+              z_1 & = a + bi
+              \nonumber      \\
+              z_2 & = c + di
+              \nonumber
+          \end{align}
 
-Jika:
-\begin{align}
-    z_1 & = a + bi
-    \nonumber      \\
-    z_2 & = c + di
-    \nonumber
-\end{align}
+          Maka:
+          \begin{align}
+              z_1 \cdot z_2 & = (a + bi)\cdot(c + di)
+              \nonumber                                \\
+                            & = (ac - bd) + (ad + bc)i
+              \nonumber
+          \end{align}
 
-Maka:
-\begin{align}
-    z_1 \cdot z_2 & = (a + bi)\cdot(c + di)
-    \nonumber                                \\
-                  & = (ac - bd) + (ad + bc)i
-    \nonumber
-\end{align}
+          Contoh:
+          \begin{align}
+              z_1 & = 1 + 2i
+              \nonumber      \\
+              z_2 & = 3 + 5i
+              \nonumber
+          \end{align}
 
-Contoh:
-\begin{align}
-    z_1 & = 1 + 2i
-    \nonumber      \\
-    z_2 & = 3 + 5i
-    \nonumber
-\end{align}
+          Jawab:
+          \begin{align}
+              z_1 \cdot z_2 & = (1 + 2i) \cdot (3 + 5i)
+              \nonumber                                 \\
+                            & = (3 - 10) + (5 + 6)i
+              \nonumber                                 \\
+                            & = -7 + 11i
+              \nonumber
+          \end{align}
+          \leavevmode
+          \\\\
 
-Jawab:
-\begin{align}
-    z_1 \cdot z_2 & = (1 + 2i) \cdot (3 + 5i)
-    \nonumber                                 \\
-                  & = (3 - 10) + (5 + 6)i
-    \nonumber                                 \\
-                  & = -7 + 11i
-    \nonumber
-\end{align}
+    \item   \textbf{Pembagian dua bilangan kompleks}\\
 
-\textbf{4.\>Pembagian dua bilangan kompleks\\}
+          Jika
+          \begin{align}
+              z_1 & = a + bi
+              \nonumber      \\
+              z_2 & = c + di
+              \nonumber
+          \end{align}
 
-Jika
-\begin{align}
-    z_1 & = a + bi
-    \nonumber      \\
-    z_2 & = c + di
-    \nonumber
-\end{align}
+          Maka $\dfrac{z_1}{z_2}$ menyatakan pembagian bilangan kompleks dengan pembilang $z_1$ dan penyebut $z_2$. Penyebut dikalikan sekawannya $\dfrac{z_1}{z_2} \cdot \dfrac{?}{z_2}$. Agar nilai semula tidak berubah, maka pembilang juga harus dikalikan dengan bilangan yang sama: $\dfrac{z_1}{z_2} \cdot \dfrac{\overline{z_2}}{z_2}$. Sekarang pembilang bernilai riil dan pembagian dapat dilakukan.
 
-Maka $\dfrac{z_1}{z_2}$ menyatakan pembagian bilangan kompleks dengan pembilang $z_1$ dan penyebut $z_2$. Penyebut dikalikan sekawannya $\dfrac{z_1}{z_2} \cdot \dfrac{?}{z_2}$. Agar nilai semula tidak berubah, maka pembilang juga harus dikalikan dengan bilangan yang sama: $\dfrac{z_1}{z_2} \cdot \dfrac{\overline{z_2}}{z_2}$. Sekarang pembilang bernilai riil dan pembagian dapat dilakukan.
+          \newpage
+          Contoh:
+          \begin{align}
+              z_1 & = 1 + 2i
+              \nonumber      \\
+              z_2 & = 2 + 3i
+              \nonumber
+          \end{align}
 
-Contoh:
-\begin{align}
-    z_1 & = 1 + 2i
-    \nonumber      \\
-    z_2 & = 2 + 3i
-    \nonumber
-\end{align}
+          Maka:
+          \begin{align}
+              \dfrac{z_1}{z_2} & = \dfrac{1+2i}{2+3i}
+              \nonumber                                                        \\
+                               & = \dfrac{1+2i}{2+3i} \cdot \dfrac{2-3i}{2-3i}
+              \nonumber                                                        \\
+                               & = \dfrac{(2+6)+(-3+4)i}{2^2+3^2}
+              \nonumber                                                        \\
+                               & = \dfrac{8}{13} + \dfrac{1}{13}i
+              \nonumber
+          \end{align}
+\end{enumerate}
 
-Maka:
-\begin{align}
-    \dfrac{z_1}{z_2} & = \dfrac{1+2i}{2+3i}
-    \nonumber                                                        \\
-                     & = \dfrac{1+2i}{2+3i} \cdot \dfrac{2-3i}{2-3i}
-    \nonumber                                                        \\
-                     & = \dfrac{(2+6)+(-3+4)i}{2^2+3^2}
-    \nonumber                                                        \\
-                     & = \dfrac{8}{13} + \dfrac{1}{13}i
-    \nonumber
-\end{align}
 
 
 \newpage
@@ -230,18 +251,24 @@ Modulus atau nilai absolut bilangan kompleks $ z = x + iy $, didefinisikan sebag
 
 \begin{align}
     |z|         & = \sqrt{x^2+y^2}
-    \\\nonumber\\
+    \nonumber                                        \\
+    \nonumber                                        \\
     |z_1 - z_2| & = \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}
+    \nonumber
 \end{align}
 \\ \\
 
 Sifat Modulus
 \begin{align}
     \bigg | \frac{z_1}{z_2} \bigg | & = \frac{|z_1|}{|z_2|}
-    \\\nonumber\\
+    \nonumber                                               \\
+    \nonumber                                               \\
     |z_1 z_2|                       & = |z_1| \cdot |z_2|
+    \nonumber
 \end{align}
 \\ \\
+
+
 
 \newpage
 \begin{center}
@@ -279,6 +306,8 @@ Sifat Sekawan/\textit{Konjugate}:
           $Im(z) = \dfrac{z-z}{2i}$
 \end{itemize}
 
+
+
 \newpage
 \begin{center}
     \textbf{Representasi Polar}
@@ -290,9 +319,10 @@ ditulis dalam bentuk polar:
 
 \begin{align}
     z & = r(cos \theta + i sin \theta)
-    \\\nonumber\\
+    \nonumber                          \\
+    \nonumber                          \\
     z & = r \angle \theta
-    \\\nonumber
+    \nonumber
 \end{align}
 
 dengan,
@@ -335,7 +365,10 @@ Argumen:
       & = 5(\cos 53,1^{\circ} + \sin 53,1^{\circ})
     \nonumber                                      \\
       & = 5 \angle 53,1^{\circ}
+    \nonumber
 \end{align}
+
+
 
 \newpage
 \begin{center}
@@ -345,12 +378,14 @@ Argumen:
 
 Notasi matematis formal adalah bentuk Euler:
 \begin{align}
-    z = re^{i\theta} \\\nonumber
+    \boxed{z = re^{i\theta}}
+    \nonumber
 \end{align}
 
 Identitas Euler:
 \begin{align}
-    e^{i\theta} = cos\theta + i sin\theta \\\nonumber
+    \boxed{e^{i\theta} = cos\theta + i sin\theta}
+    \nonumber
 \end{align}
 \leavevmode\\
 
@@ -388,6 +423,8 @@ Argumen:
     \nonumber
 \end{align}
 
+
+
 \newpage
 \begin{center}
     \textbf{Perkalian dan Pangkat Bentuk Exponen}
@@ -400,6 +437,7 @@ Argumen:
                                 & = cos(\theta_1 + \theta_2) + i\;sin(cos(\theta_1 + \theta_2))
     \nonumber                                                                                                                                \\
                                 & = e^{i(\theta_1 + \theta_2)}
+    \nonumber
 \end{align}
 
 Maka, jika $z_1 = r_1e^{i\theta_1}$ dan $z_2 = r_2e^{i\theta_2}$, produk $z_1z_2$ memiliki bentuk eksponensial:
@@ -409,6 +447,7 @@ Maka, jika $z_1 = r_1e^{i\theta_1}$ dan $z_2 = r_2e^{i\theta_2}$, produk $z_1z_2
            & = r_1r_2e^{i\theta_1}e^{i\theta_2}
     \nonumber                                    \\
            & = (r_1r_2)e^{i(\theta_1\theta_2)}
+    \nonumber
 \end{align}
 \begin{align}
     \dfrac{z_1}{z_2} & = \dfrac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}}
@@ -418,6 +457,7 @@ Maka, jika $z_1 = r_1e^{i\theta_1}$ dan $z_2 = r_2e^{i\theta_2}$, produk $z_1z_2
                      & = \dfrac{r_1}{r_2} \cdot \dfrac{e^{i(\theta_1-\theta_2)}}{e^{i0}}
     \nonumber                                                                                                                           \\
                      & = \dfrac{r_1}{r_2} e^{i(\theta_1-\theta_2)}
+    \nonumber
 \end{align}
 \begin{align}
     z^{-1} & = \dfrac{1}{z}
@@ -427,10 +467,14 @@ Maka, jika $z_1 = r_1e^{i\theta_1}$ dan $z_2 = r_2e^{i\theta_2}$, produk $z_1z_2
            & = \dfrac{1}{r} e^{i(0-\theta)}
     \nonumber                                \\
            & = \dfrac{1}{r} e^{-i\theta}
+    \nonumber
 \end{align}
 \begin{align}
     z^n & = r^n e^{in\theta}
+    \nonumber
 \end{align}
+
+
 
 \newpage
 \begin{center}
@@ -450,7 +494,8 @@ Contoh (titik ke titik):
           & = 2x + 2iy + 1
     \nonumber                 \\
           & = (2x + 1) + 2iy
-    \\\nonumber\\
+    \nonumber                 \\
+    \nonumber                 \\
     Re(z) & = u(x,y) = 2x + 1
     \nonumber                 \\
     Im(z) & = v(x,y) = 2y
@@ -462,7 +507,8 @@ Contoh (lintasan ke lintasan):
     f(z)  & = \overline{z}
     \nonumber              \\
           & = x - iy
-    \\\nonumber\\
+    \nonumber              \\
+    \nonumber              \\
     Re(z) & = u(x,y) = x
     \nonumber              \\
     Im(z) & = v(x,y) = -y
@@ -482,7 +528,8 @@ Contoh (daerah ke daerah):
     z       & = w - 1
     \nonumber         \\
     |w-1|   & < 1
-    \\\nonumber
+    \nonumber         \\
+    \nonumber
 \end{align}
 \\
 
@@ -491,7 +538,9 @@ Contoh (daerah ke daerah):
 \end{center}
 \leavevmode\\
 
-Titik dimana $f(z)$ gagal dipetakan ke titik lain. Contoh pada fungsi \\ $f(z) = \dfrac{1}{z+1}$ gagal dipetakan pada titik asal $z=1$ karena $\dfrac{0}{0}$ tidak terdefinisi.
+Titik dimana $f(z)$ gagal dipetakan ke titik lain. Contoh pada fungsi $f(z) = \dfrac{1}{z+1}$ gagal dipetakan pada titik asal $z=1$ karena $\dfrac{0}{0}$ tidak terdefinisi.
+
+
 
 \newpage
 \begin{center}
@@ -502,7 +551,8 @@ Titik dimana $f(z)$ gagal dipetakan ke titik lain. Contoh pada fungsi \\ $f(z) =
 Konsep limit pada fungsi kompleks $f(z)$ diperluas dari limit pada fungsi real $f(x)$ sebagai:
 Pada fungsi kompleks $f(z)$, $\lim_{z \to z_0} f(z)$ bernilai $L$ atau
 \begin{align}
-    \lim_{z \to z_0} f(z) = L
+    \boxed{\lim_{z \to z_0} f(z) = L}
+    \nonumber
 \end{align}
 jika terdapat $\epsilon  > 0$ dan $\delta  > 0$ sedemikian sehingga jika ada $\epsilon$ yang memenuhi $|f(z) - L| \leq \epsilon$ , maka terilustrasi:
 \begin{itemize}
@@ -532,6 +582,7 @@ $f(z)$ dinyatakan $f(z) = U(x,y) + iV(x,y)$ dapat diturunkan di $z_0 = x_0 + iy_
     \nonumber                                            \\
     \nonumber                                            \\
     f(z_0)         & = Ux (x_0 + y_0) + i Vy (x_0 + y_0)
+    \nonumber
 \end{align}
 \leavevmode\\
 
@@ -591,6 +642,7 @@ PCR dalam koordinat polar:
 Turunan dari f(z) dinyatakan :
 \begin{align}
     f'(z) = e^{-i\theta}(Ur+iVr)
+    \nonumber
 \end{align}
 
 \newpage
@@ -653,25 +705,31 @@ Aturan penurunan pada fungsi riil berlaku pada fungsi kompleks. Jika $f(z)$ dan 
 \begin{itemize}
     \item penjumlahan
           \begin{align}
-              \frac{d}{dz}(f(z)+g(z)) & = f'(z) + g'(z)
+              \boxed{\frac{d}{dz}(f(z)+g(z)) = f'(z) + g'(z)}
+              \nonumber
           \end{align}
     \item perkalian skalar
           \begin{align}
-              \frac{d}{dz}(kf(z)) & = kf'(z)
+              \boxed{\frac{d}{dz}(kf(z)) = kf'(z)}
+              \nonumber
           \end{align}
     \item aturan rantai
           \begin{align}
-              \frac{d}{dz}(f(g(z))) & = f'(g(z)) g'(z)
+              \boxed{\frac{d}{dz}(f(g(z))) = f'(g(z)) g'(z)}
+              \nonumber
           \end{align}
     \item aturan perkalian
           \begin{align}
-              \frac{d}{dz}[f(z)g(z)] & = f'(z)g(z) + g'(z)f(z)
+              \boxed{\frac{d}{dz}[f(z)g(z)] = f'(z)g(z) + g'(z)f(z)}
+              \nonumber
           \end{align}
     \item aturan pembagian
           \begin{align}
-              \frac{d}{dz}\frac{f(z)}{g(z)} & = \frac{f'(z)g(z) - g'(z)f(z)}{g^2(z)}
+              \boxed{\frac{d}{dz}\frac{f(z)}{g(z)} = \frac{f'(z)g(z) - g'(z)f(z)}{g^2(z)}}
+              \nonumber
           \end{align}
 \end{itemize}
+
 
 
 \newpage
@@ -691,12 +749,14 @@ Diketahui:
 Memenuhi Persamaan Cauchy-Riemann (PCR), jika:
 \begin{align}
     \dfrac{\partial U}{\partial x} = \dfrac{\partial V}{\partial y}
+    \nonumber
 \end{align}
 \begin{center}
     dan
 \end{center}
 \begin{align}
     \dfrac{\partial U}{\partial y} = -\dfrac{\partial V}{\partial x}
+    \nonumber
 \end{align}
 
 dimana:
@@ -739,7 +799,7 @@ Jika dilakukan pada bentuk kompak:
     f'(z)    & = 2z
     \nonumber
 \end{align}
-\leavevmode\\ \\
+
 
 
 \newpage
@@ -786,6 +846,8 @@ Agar harmonik
     k               & = 6
     \nonumber
 \end{align}
+
+
 
 \newpage
 \begin{center}
@@ -836,6 +898,7 @@ Misal  $u(x,y)$ dan  $v(x,y)$ pada $D$ dan berlaku PCR maka $v(x,y)$ disebut kon
     \item $u(x,y)$ dan $v(x,y)$ masing-masing punya fungsi harmonik.
     \item $u_x = v_y$ dan $u_y = -v_x$
 \end{itemize}
+
 
 
 \newpage
@@ -913,6 +976,7 @@ Sehingga:
 \end{align}
 
 dengan c suatu konstanta.
+
 
 
 \newpage
@@ -1032,6 +1096,8 @@ Maka:
     \nonumber
 \end{align}
 
+
+
 \newpage
 \begin{center}
     \textbf{DERET KOMPLEKS I}
@@ -1042,13 +1108,13 @@ Maka:
 
 Misal fungsi $f(z)$ analitik pada $|z-z0| < R0$ maka $f(z)$ di deretkan menjadi:
 \begin{align}
-    f(z) = \Sigma_{n=0}^{\infty}\dfrac{f^{(n)}{(z_0)(z-z_0)^0}}{n!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^0}}{0!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^1}}{1!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^2}}{2!} \nonumber
+    \boxed{f(z) = \sum_{n=0}^{\infty}\dfrac{f^{(n)}{(z_0)(z-z_0)^0}}{n!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^0}}{0!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^1}}{1!}=\dfrac{f^{(0)}{(z_0)(z-z_0)^2}}{2!}}
+    \nonumber
 \end{align}
 
 Dengan $n = 0, 1, 2, 3, ....$
 
 Daerah keanalitikan/kekonvergenan $|z-z_0| < R_0$
-
 \leavevmode\\
 
 Contoh:
@@ -1066,38 +1132,38 @@ D.K = $|z|<\infty$
     \nonumber                                                                                                            \\
          & = \dfrac{1}{0!} + \dfrac{1z}{1!} + \dfrac{1z^2}{2!} + \dfrac{1z^3}{3!} + \dfrac{1z^4}{4!}....
     \nonumber                                                                                                            \\
-         & = \Sigma_{n=0}^{\infty} \dfrac{z^n}{n!}....
+         & = \sum_{n=0}^{\infty} \dfrac{z^n}{n!}....
     \nonumber
 \end{align}
+\leavevmode\\
 
 \textbf{Deret MacLaurin}
 
-Deret MacLaurin merupakan deret Taylor dengan pusat penderetan di titik 0
-
+Deret MacLaurin merupakan deret Taylor dengan pusat penderetan di titik 0.
 \begin{align}
-    f(z) = \Sigma_{n=0}^{\infty} \dfrac{f"(0)z^n}{n!}
+    \boxed{f(z) = \sum_{n=0}^{\infty} \dfrac{f"(0)z^n}{n!}}
     \nonumber
 \end{align}
 
 Jenis Deret MacLaurin:
-\begin{itemize}
+\begin{enumerate}
     \item   \begin{equation}
-              e^z = \Sigma_{n=0}^{\infty} \dfrac{z^n}{n!}....(|Z|<\infty)
+              \boxed{e^z = \sum_{n=0}^{\infty} \dfrac{z^n}{n!}\;....\;(|Z|<\infty)}
               \nonumber
           \end{equation}
     \item   \begin{equation}
-              \dfrac{1}{1-z} = \Sigma_{n=0}^{\infty} z^{\infty}....(|Z|<1)
+              \boxed{\dfrac{1}{1-z} = \sum_{n=0}^{\infty} z^{\infty}\;....\;(|Z|<1)}
               \nonumber
           \end{equation}
     \item   \begin{equation}
-              \dfrac{1}{1+z} = \Sigma_{n=0}^{\infty} (-1)^n z^n....(|Z|<1)
+              \boxed{\dfrac{1}{1+z} = \sum_{n=0}^{\infty} (-1)^n z^n\;....\;(|Z|<1)}
               \nonumber
           \end{equation}
-\end{itemize}
+\end{enumerate}
+\leavevmode\\
 
-\newpage
+Contoh:\\
 
-Contoh:
 Tentukan deret MacLaurin dari $f(z)=\dfrac{1}{1+z}$
 
 $f(z)=\dfrac{1}{1+z}$ analitik dengan titik singular di $Z = -1$
@@ -1124,7 +1190,7 @@ D.K $= |z-0|<1$
     \nonumber                                                                                                                                              \\
          & = \dfrac{(-1)^0 \cdot 0!}{0!} + \dfrac{(-1) \cdot 1! z}{1!} + \dfrac{(-1)^2 \cdot 2! \cdot z^2}{2!} + \dfrac{(-1)^3 \cdot 3! \cdot z^3}{3!}....
     \nonumber                                                                                                                                              \\
-         & = \Sigma_{n=0}^{\infty} (-1)^n \cdot z^n .... (|z|<1)
+         & = \sum_{n=0}^{\infty} (-1)^n \cdot z^n .... (|z|<1)
     \nonumber
 \end{align}
 
@@ -1133,6 +1199,8 @@ Perbedaan Deret Taylor dan Deret MacLaurin:
     \item Deret Taylor memiliki pusat penderetan $|Z-Z_0|<R$
     \item Deret MacLaurin memiliki pusat penderetan di $|Z-0|<R$
 \end{itemize}
+
+
 
 \newpage
 \begin{center}
@@ -1151,9 +1219,9 @@ $\rightarrow e^{iz}$ fungsi analitik
 D.K $|Z|<\infty$
 
 \begin{align}
-    e^{iz} & = \Sigma_{n=0}^{\infty} \dfrac{(iz)^n}{n!}
-    \nonumber                                                               \\
-           & = \Sigma_{n=0}^{\infty} \dfrac{i^n z^n}{n!} .... (|Z|< \infty)
+    e^{iz} & = \sum_{n=0}^{\infty} \dfrac{(iz)^n}{n!}
+    \nonumber                                                             \\
+           & = \sum_{n=0}^{\infty} \dfrac{i^n z^n}{n!} .... (|Z|< \infty)
     \nonumber
 \end{align}
 \leavevmode\\
@@ -1178,6 +1246,8 @@ D.K $|Z-i|<\infty$
          & = e^i \cdot e^{z-i} .... (|Z-i|< \infty)
     \nonumber
 \end{align}
+
+
 
 \newpage
 \begin{center}
@@ -1211,17 +1281,517 @@ $|\dfrac{1}{Z}|<1$
 
 \begin{align*}
     f(z) & = \dfrac{1}{1-z}
-    \nonumber                                                          \\
+    \nonumber                                                        \\
          & = \dfrac{1}{z} (\dfrac{1}{\dfrac{1}{z}-1})
-    \nonumber                                                          \\
-         & = \dfrac{-1}{2} \Sigma_{n=0}^{\infty}(\dfrac{1}{z})^n
-    \nonumber                                                          \\
-         & = \Sigma_{n=0}^{\infty} \dfrac{(-1) \cdot 1^n}{z \cdot z^n}
-    \nonumber                                                          \\
-         & = \Sigma_{n=0}^{\infty} \dfrac{-1}{z^{n+1}} .... |Z|>1
+    \nonumber                                                        \\
+         & = \dfrac{-1}{2} \sum_{n=0}^{\infty}(\dfrac{1}{z})^n
+    \nonumber                                                        \\
+         & = \sum_{n=0}^{\infty} \dfrac{(-1) \cdot 1^n}{z \cdot z^n}
+    \nonumber                                                        \\
+         & = \sum_{n=0}^{\infty} \dfrac{-1}{z^{n+1}} .... |Z|>1
 \end{align*}
 
 
 
+\newpage
+\begin{center}
+    \textbf{RESIDU}
+\end{center}
+\leavevmode\\
+
+\textbf{Titik Singular Terisolasi}
+\begin{itemize}
+    \item $Z_0$ tiitk singular dari $f(z)$, jika di titik $Z_0 f(z)$ gagal analitik maka artinya $f’(Z_0)$ tidak ada atau $f'(z)$ tidak analitik di $z_0$
+    \item $f(z)$ analitik di $Z_0$ jika $f'(z)$ ada di $Z_0$ dan sekitarnya
+\end{itemize}
+\leavevmode\\
+
+Contoh:
+
+\begin{enumerate}
+    \item   $f(z) = \dfrac{Z+1}{Z^3(Z^2+1)}$ \\
+          T.S di $Z=0, Z=i,$ dan $Z=-i$ \\
+          Di $Z=0, Z=i,$ dan $Z=-i$ dapat dibuat lingkungan sehingga tidak memuat T.S yang lain $\rightarrow$ T.S terisolasi
+    \item   $f(z) = \dfrac{1}{\sin (\dfrac{n}{2})}$ \\
+          Tidak analitik bila $\sin (\dfrac{\pi}{2})=0$ \\
+          $ \rightarrow Z = \pm \dfrac{1}{n}$ T.S terisolasi atau $Z=0$ tidak terisolasi
+\end{enumerate}
+\leavevmode\\
+
+\textbf{Residu}
+
+Contoh:
+
+\begin{align}
+    f(z) & = \dfrac{3}{(Z-1)(Z+2)}
+    \nonumber                                       \\
+         & = \dfrac{A}{(Z-1)} + \dfrac{B}{(Z+2)}
+    \nonumber                                       \\
+         & = \dfrac{1}{(Z-1)} + \dfrac{(-1)}{(Z+2)}
+    \nonumber
+\end{align}
+
+T.S di $1$ dan $-2$
+\begin{itemize}
+    \item   Residu $f(z)$ di $z=1$ adalah $1$ \\
+          Res $f(z)=1$ \\
+          $Z=1$
+    \item   Residu $f(z)$ di $z=-2$ adalah $-1$ \\
+          Res $f(z)=-1$ \\
+          $Z=-2$
+\end{itemize}
+
+Cara menghitung residu di T.S terisolasi:
+\begin{itemize}
+    \item Di faktorkan
+    \item Di deretkan
+    \item Menggunakan teorema
+\end{itemize}
+\leavevmode\\
+
+Contoh:
+\begin{align}
+    \dfrac{z+1}{z(z^2+4)}
+    \nonumber
+\end{align}
+
+T.S di $Z=0$
+
+$Z=2i$ dan $Z=-2i$
+
+Res $f(z)$ di $Z=0$
+
+\begin{align}
+    f(z)                  & = \dfrac{Q_1(Z)}{z-0}
+    \nonumber                                                   \\
+    \dfrac{z+1}{z(z^2+4)} & = \dfrac{Q_1(Z)}{z}
+    \nonumber                                                   \\
+    Q_1(Z)                & = \dfrac{z+1}{z^2+4}
+    \nonumber                                                   \\
+    Res f(z) = Q_1(0)     & = \dfrac{0+1}{0^2+4} = \dfrac{1}{4}
+    \nonumber
+\end{align}
+
+
+
+\newpage
+\begin{center}
+    \textbf{APLIKASI RESIDU}
+\end{center}
+\leavevmode\\
+
+Contoh:
+
+Misalkan $C:|Z|=2$ arah (t) hitung $\oint_c f(z)dz$ jika:
+\\
+
+$f(z) = \dfrac{e^x}{Z(Z+1)^3}$
+\\
+
+$\rightarrow$ TS di $0$ dan $-1$
+\\
+
+\begin{itemize}
+    \item   Residu di $Z=0$ \\
+          \begin{align}
+              f(z)              & = \dfrac{Q_1(Z)}{z-0}
+              \nonumber                                   \\
+              Q_1               & = \dfrac{e^x}{Z(Z+1)^3}
+              \nonumber                                   \\
+              Res f(z) = Q_1(0) & = \dfrac{e^0}{(0+1)^3}
+              \nonumber                                   \\
+                                & = 1
+              \nonumber
+          \end{align}
+    \item   Residu di $Z=-1$ \\
+          \begin{align}
+              f(z)                  & = \dfrac{Q_2(Z)}{(Z-(-1))}
+              \nonumber                                               \\
+              \dfrac{e^x}{Z(Z+1)^3} & = \dfrac{Q_2(Z)}{(Z+1)^3}
+              \nonumber                                               \\
+              Q_2(Z)                & = \dfrac{e^0}{z} analitik
+              \nonumber                                               \\
+              Res f(z)              & = \dfrac{Q^{(3-1)}(-1)}{(3-1)!}
+              \nonumber                                               \\
+                                    & = \dfrac{Q''(-1)}{2!}
+              \nonumber                                               \\
+                                    & = \dfrac{-5e^{-1}}{2}
+              \nonumber
+          \end{align}
+\end{itemize}
+
+\begin{align}
+    Q_2'(Z)             & = \dfrac{e^z \cdot Z-1 \cdot e^z}{Z^3}
+    \nonumber                                                                                            \\
+                        & = \dfrac{e^z}{Z} - \dfrac{e^z}{Z^2}
+    \nonumber                                                                                            \\
+    Q_2"(Z)             & = \dfrac{e^z}{Z} - \dfrac{e^z}{Z^2} - \dfrac{e^z \cdot Z^2 - 2Z(e^z)}{(Z^2)^2}
+    \nonumber                                                                                            \\
+    Q_2"(-1)            & = \dfrac{-e^{-1}}{-1} - \dfrac{-e^{-1}}{(-1)^2}
+    \nonumber                                                                                            \\
+                        & = \dfrac{e^{-1}(-1)^2-2(-1)e^{-1}}{(-1)^4}
+    \nonumber                                                                                            \\
+    Q_2"(-1)            & = -e^{-1} - e^{-1} - \dfrac{(2e^{-1} + 3e^{-1})}{1}
+    \nonumber                                                                                            \\
+                        & = -2e^{-1} - 3e^{-1}
+    \nonumber                                                                                            \\
+                        & = -5e^{-1}
+    \nonumber                                                                                            \\
+    jadi \oint_c f(z)dz & = 2\pi i(Res f(z_1) + Res f(z_2))
+    \nonumber                                                                                            \\
+                        & = 2\pi i(1+\dfrac{(-5e^{-1})}{2})
+    \nonumber                                                                                            \\
+                        & = \pi i (2-5e^{-1})
+    \nonumber
+\end{align}
+
+
+
+\newpage
+\begin{center}
+    \textbf{INTEGRAL TAK WAJAR}
+\end{center}
+\begin{align}
+    \boxed{\int_{- \infty}^{\infty} f(x) dz = \lim_{R \to \infty} \int_{-R}^{R} f(x) dz = \oint_c f(z)\,dz}
+    \nonumber
+\end{align}
+
+Syarat:
+\begin{itemize}
+    \item $f(x)$ : fungsi rasional $\rightarrow f(x)=\dfrac{p(x)}{q(x)}$
+    \item Pangkat $q(x)$ - pangkat $p(x) \ge 2$
+    \item q(x)0 untuk x  (-,)
+\end{itemize}
+
+Contoh:\\
+
+Hitung $\int_{- \infty}^{\infty} f(x)dx$ dengan $f(x) = \dfrac{2x}{x^2+4}$
+
+$\rightarrow f(x) = f(z) \rightarrow f(z)=\dfrac{2x}{x^2+4},$ titik singular di $z = 2i$ dan $z = -2i$
+
+$Res f(z)$ di $z = 2i$
+
+$f(z)=\dfrac{Q(z)}{Z-2i} \rightarrow Q(z)=\dfrac{2Z}{Z^2-4}$ analitik di $Z = 2i$
+
+$Res f(z) = Q(z)=\dfrac{2(2i)}{2i+2i} = \dfrac{4i}{4i} = 1$
+
+\begin{align}
+    jadi \int_{- \infty}^{\infty} f(x)dx & = 2\pi i (Res f(z))
+    \nonumber                                                  \\
+                                         & = 2\pi i \cdot 1
+    \nonumber                                                  \\
+                                         & = 2\pi i
+    \nonumber
+\end{align}
+
+
+
+\newpage
+\begin{center}
+    \textbf{DERET FOURIER}
+\end{center}
+\leavevmode\\
+
+Fungsi Periodik
+\begin{itemize}
+    \item Fungsi $f(t)$: fungsi periodik bila ada bilangan $P \epsilon R$ sehingga berlaku $f(t+P) = f(t)$ untuk setiap $t \epsilon Df$
+    \item P terkecil disebut periode dari f
+\end{itemize}
+
+Contoh:
+
+\begin{enumerate}
+    \item $f(t)= -1;-2 \le t < 0$\\
+          $ t ; 0 \le 1 < 2$\\
+          fungsi f(t) dipandang periodik dengan periode p=4. Gambaran f(t) pada interval [-6,6]
+    \item Tentukan persamaan fungsi berikut
+          \begin{itemize}
+              \item Periode fungsi adalah 4
+              \item Diambil interval [04]
+              \item Persamaan interval tersebut:
+                    f(t)=3 untuk 0t2
+                    -3 untuk 2t4
+              \item  Persamaan fungsi periodik:
+                    f(t)=3 untuk 0t2
+                    -3 untuk 2t4
+                    P = 4
+          \end{itemize}
+\end{enumerate}
+
+
+
+\newpage
+\begin{center}
+    \textbf{KOEFISIEN FOURIER}
+\end{center}
+\leavevmode\\
+\begin{itemize}
+    \item Fungsi $f(t)$ di definisikan pada $(0, 2L)$
+    \item Periodik dengan periode 2L
+    \item Kontinu bagian demi bagian
+    \item Deret fourier $f(t)$ di definisikan:
+          \begin{align}
+              f(t) = \dfrac{a_0}{2} + \sum_{n = 1}^{\infty} (an \cos \dfrac{\pi nt}{L} + b\pi \sin \dfrac{\pi nt}{L})
+              \nonumber
+          \end{align}
+    \item $f(t)$ ganjil:
+          \begin{align}
+              f(t) = \sum_{n = 1}^{\infty} bn \sin \dfrac{\pi nt}{L}
+              \nonumber
+          \end{align}
+    \item $f(t)$ genap:
+          \begin{align}
+              f(t) = \dfrac{a_0}{2} + \sum_{n = 1}^{\infty} an \cos \dfrac{\pi nt}{L}
+              \nonumber
+          \end{align}
+\end{itemize}
+
+Contoh:
+
+Tentukan Deret Fourier cosinus dari fungsi $f(t)=t$ ; $0<t<2$ yang dipandang periodik dengan periode $P=4$.
+
+\begin{align}
+    a_0  & = \dfrac{2}{2} \int_{0}^{2} f(t) \;dt
+    \nonumber                                                                                                                                                       \\
+         & = \int_{0}^{2} t \;dt
+    \nonumber                                                                                                                                                       \\
+         & = 2
+    \nonumber                                                                                                                                                       \\
+    a_n  & = \dfrac{2}{2} \int_{0}^{2} t \cos \dfrac{\pi nt}{2} \;dt
+    \nonumber                                                                                                                                                       \\
+         & = \dfrac{2}{n \pi} [t \sin \dfrac{\pi nt}{2}|_0^2 - \int_{0}^{2} \sin \dfrac{\pi nt}{2} \; dt]
+    \nonumber                                                                                                                                                       \\
+         & = \dfrac{-2}{n \pi} [\dfrac{2}{\pi nt} \cos \dfrac{\pi nt}{2}|_0^2]
+    \nonumber                                                                                                                                                       \\
+         & = \dfrac{4}{n^2 \pi^2} (\cos n \pi - 1)
+    \nonumber                                                                                                                                                       \\
+    f(t) & = \dfrac{a_0}{2} + \sum_{n = 1}^{\infty} a_n \cos \dfrac{\pi nt}{2}
+    \nonumber                                                                                                                                                       \\
+         & = 1 + \sum_{n = 1}^{\infty} \dfrac{2}{n^2 \pi^2} (\cos n\pi - 1) \cos \dfrac{\pi nt}{2}
+    \nonumber                                                                                                                                                       \\
+         & = 1 - \dfrac{8}{n^2} \cos \dfrac{\pi t}{2} + 0 - \dfrac{8}{3^2 \pi^2} \cos \dfrac{3\pi t}{2} + 0 - \dfrac{8}{5^2 \pi^2} \cos \dfrac{5\pi t}{2} + \; ....
+    \nonumber                                                                                                                                                       \\
+         & = 1 - \sum_{n = 1}^{\infty} \dfrac{8}{(2n - 1)^2 \pi^2} \cos \dfrac{(2n - 1) \pi}{2}
+    \nonumber
+\end{align}
+
+
+
+\newpage
+\begin{center}
+    \textbf{TRANSFORMASI FOURIER}
+\end{center}
+\leavevmode\\
+
+Cara mendapatkan TF dari sebuah fungsi:
+\begin{itemize}
+    \item Menggunakan rumus
+    \item Menggunakan tabel
+    \item Menggunakan sifat TF:
+          \begin{itemize}
+              \item Sifat shifting dan stretching
+              \item Sifat konvolusi
+              \item Turunan
+          \end{itemize}
+\end{itemize}
+\leavevmode\\
+
+Sifat shifting dan stretching:
+\begin{itemize}
+    \item Shifting / pergeseran \\
+          $f(t - b) \leftrightarrow e^{-isb} F(s)$
+    \item Stretching / similaritas \\
+          $f(at) \leftrightarrow \dfrac{1}{|a|} F(\dfrac{s}{a})$
+    \item Shifting dan Stretching \\
+          $f(at - b) \leftrightarrow \dfrac{1}{|a|}e^{-isb/a} F(\dfrac{s}{a})$
+\end{itemize}
+\leavevmode\\
+
+Konvolusi dari dua fungsi g(t) dan fungsi f(t) di definisikan:
+\begin{align}
+    \boxed{(g*f)(t) = \int_{- \infty}^{\infty}g(t-x)f(x)\;dx}
+    \nonumber
+\end{align}
+
+Misal diberikan pasangan transformasi:
+\begin{itemize}
+    \item $f(t) \rightarrow F(s)$
+    \item $g(t) \rightarrow G(s)$
+    \item $h(t) = (g*f)(t)$
+    \item maka $h(t) = (g*f)(t) \leftrightarrow H(s)=G(s)F(s)$
+\end{itemize}
+\leavevmode\\\\\\\\
+
+Sifat aljabar dari konvolusi fungsi dan konvolusi transformasi:
+\begin{itemize}
+    \item $f*g = g*f$
+    \item $(f*g)*h = f*(g*h)$
+    \item $f*(g+h) = (f*g)+(f*h)$
+    \item $(fg)*(hk) \leftrightarrow (F*G)(H*K)$
+    \item $(f+g)(h+k) \leftrightarrow (F+G)*(H+K)$
+    \item $f(g*h) \leftrightarrow F*(GH)$
+\end{itemize}
+
+
+
+\newpage
+\begin{center}
+    \textbf{FUNGSI DASAR}
+\end{center}
+\leavevmode\\
+
+\begin{enumerate}
+    \item   \textbf{Fungi Impulse (Delta Dirac): $f(t) = \delta(t)$}\\
+          Didefinisikan:
+          \begin{align}
+              f(t) = \delta (t) =
+              \begin{cases}
+                  0 \;untuk\; t \neq 0
+                  \nonumber \\
+                  \infty \;untuk\; t = 0
+                  \nonumber \\
+                  \int_{- \infty}^{\infty} \delta(t)\;dt=1
+                  \nonumber
+              \end{cases}
+          \end{align}
+          Bentuk impulse yang umum:\\
+          $f(t) = k\delta(t-t_0)$ \\
+          Menyatakan:
+          \begin{itemize}
+              \item Sinyal impulse yang terjadi di $t=t0$
+              \item Tingginya k
+              \item Luasnya k satuan
+          \end{itemize}
+          \leavevmode\\
+    \item   \textbf{Fungsi Unit Step $f(t) = u(t)$}\\
+          Fungsi unit step didefinisikan sebagai:
+          \begin{align}
+              f(t) =
+              \begin{cases}
+                  1 & \text{untuk $t \ge 0$}
+                  \nonumber                  \\
+                  0 & \text{untuk $t < 0$}
+                  \nonumber
+              \end{cases}
+          \end{align}
+          \leavevmode\\
+    \item   \textbf{Fungsi Ramp}\\
+          Fungsi Ramp: $f(t) = t u(t)$ adalah fungsi terpotong dari $f(t) = t$
+          \leavevmode\\
+    \item   \textbf{Fungsi Eksponen}\\
+          $f(t) = e^{at}$ dan bentuk terpotongnya: $f(t) = e^{at} u(t)$
+          \leavevmode\\
+    \item   \textbf{Fungsi Sinus dan bentuk terpotongnya}\\
+          $f(t) = sin(at)$ dan $f(t) = sin(at)u(t)$
+          \leavevmode\\
+    \item   \textbf{Fungsi Kosinus dan bentuk terpotongnya}\\
+          $f(t) = cos(at)$ dan $f(t) = cos(at)u(t)$
+          \leavevmode\\
+\end{enumerate}
+\leavevmode\\
+
+\newpage
+\begin{center}
+    \textbf{TABEL SIFAT-SIFAT TRANSFORMASI FOURIER}
+\end{center}
+
+\begin{table}[H]
+    \renewcommand{\arraystretch}{2}
+    \begin{center}
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \textbf{No.} & \textbf{Nama Sifat} & \textbf{f(t)}     & \textbf{F(iw)}                        \\ \hline
+            1.           & Impulse             & $\delta(t)$       & $1$                                   \\ \hline
+            2a.          & Satuan              & $1$               & $2\pi \delta (W)$                     \\ \hline
+            2a.          & Unit Step           & $u(t)$            & $\dfrac{1}{iw}+\pi\delta (W)$         \\ \hline
+            3.           & Ramp                & $t\;u(t)$         & $-\dfrac{1}{w^2}+\pi\delta' (W)$      \\ \hline
+            4.           & Eksponen terpotong  & $e^{at} u(t)$     & $\dfrac{1}{iw - a}$                   \\ \hline
+            5a.          & sinus               & $\sin at$         & $i\pi[\delta(w + a) - \delta(w - a)]$ \\ \hline
+            5b.          & sinus terpotong     & $\sin at \; u(t)$ & $\dfrac{a}{(iw)^2 + a^2}$             \\ \hline
+            6a.          & kosinus             & $\cos at$         & $\pi[\delta(w + a) + \delta(w - a)]$  \\ \hline
+            6a.          & kosinus terpotong   & $\cos at \; u(t)$ & $\dfrac{iw}{(iw)^2 + a^2}$            \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+
+
+\newpage
+\begin{center}
+    \textbf{TABEL SIFAT-SIFAT TRANSFORMASI FOURIER}
+\end{center}
+
+\begin{table}[H]
+    \renewcommand{\arraystretch}{2}
+    \begin{center}
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \textbf{No.} & \textbf{Nama Sifat}  & \textbf{f(t)}       & \textbf{F(iw)}                           \\ \hline
+            1.           & Linier               & $af_1(t) + bf_2(t)$ & $aF_1(w) + bF_2(w)$                      \\ \hline
+            2.           & Pengskalaan Waktu    & $f(at)$             & $\dfrac{1}{|a|}F\Big(\dfrac{iw}{a}\Big)$ \\ \hline
+            3.           & Pergeseran Waktu     & $f(t - t_0)$        & $F(w - t_0)$                             \\ \hline
+            4.           & Pergeseran Frekuensi & $e^{at} f(t)$       & $F(iw - a)$                              \\ \hline
+            5.           & Perkalian dengan t   & $t f(t)$            & $i\dfrac{d F(iw)}{dw}$                   \\ \hline
+            6.           & Turunan waktu        & $\dfrac{dt(t)}{dt}$ & $(iw) F(iw)$                             \\ \hline
+            7.           & Modulasi             & $f(t) cos\;at$      & $\dfrac{1}{2}[F(iw + a) + F(iw - a)]$    \\ \hline
+            8.           & Konvolusi            & $f_1(t) * f_2(t)$   & $F_1(iw)F_2(w)$                          \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\newpage
+\begin{center}
+    \textbf{FAST FOURIER TRANSFORM (FFT) PADA OFDM}
+\end{center}
+\leavevmode\\
+
+Fast Fourier Transform (FFT) adalah sebuah algoritma yang digunakan untuk menghitung transformasi Fourier diskrit (DFT) dari suatu urutan data atau sinyal. Transformasi Fourier adalah sebuah teknik yang mengubah sinyal dari domain aslinya (seringkali waktu atau ruang) menjadi representasi dalam domain frekuensi. FFT mempercepat proses menghitung DFT dengan memfactorisasi matriks DFT menjadi produk faktor yang kosong (kebanyakan nol). Dengan demikian, FFT dapat mengurangi kompleksitas menghitung DFT dari $O(N^2)$ menjadi $O(N log N)$, di mana $N$ adalah ukuran data. FFT sangat berguna dalam berbagai aplikasi, termasuk pengolahan sinyal, pemrosesan citra, dan analisis spektrum frekuensi.
+Rumus FFT adalah sebagai berikut:
+\begin{align}
+    \boxed{FFT(x) = X_k = \sum_{n=0}^{N-1} x_ne^{-2\pi ikn/N}}\nonumber
+\end{align}
+
+di mana:
+\begin{itemize}
+    \item $x_n$ adalah elemen ke-n dari urutan data $x$.
+    \item $X_k$ adalah transformasi Fourier dari $x$ pada frekuensi $k$.
+    \item $N$ adalah ukuran urutan data $x$.
+    \item $i$ adalah bilangan imajiner $(i^2 = -1)$.
+\end{itemize}
+
+FFT menghitung DFT dengan memecah urutan data ke dalam bagian-bagian yang lebih kecil dan menghitung DFT dari setiap bagian tersebut secara terpisah. Kemudian, hasil dari setiap bagian tersebut digabungkan kembali untuk menghitung DFT dari urutan data yang lebih besar. Dengan menggunakan FFT, DFT dapat dihitung dengan kompleksitas $O(N log N)$ daripada $O(N^2)$ jika menggunakan definisi DFT secara langsung.
+\\
+
+OFDM adalah sebuah teknik transmisi dengan banyak frekuensi (multicarrier), menggunakan Discrete Fourier Transfor (DFT). Bagan dasar dari OFDM ditampilkan pada. Cara kerjanya adalah sebagai berikut. Deretan data informasi yang akan dikirim dikonversikan kedalam bentuk parallel, sehingga bila bit rate semula adalah R , maka bit rate di tiap-tiap jalur parallel adalah R/M dimana M adalah jumlah jalur parallel (sama dengan jumlah sub-carrier). Setelah itu, modulasi dilakukan pada tiap-tiap sub-carrier. Modulasi ini bisa berupa BPSK, QPSK, QAM atau yang lain, tapi ketiga teknik tersebut sering digunakan pada OFDM. Kemudian sinyal yang telah termodulasi tersebut diaplikasikan ke dalam Inverse Discrete Fourier Transform (IDFT), untuk pembuatan simbol OFDM. Penggunaan IDFT ini memungkinkan pengalokasian frekuensi yang saling tegak lurus (orthogonal), mengenai hal ini akan dijelaskan lebih lanjut. Setelah itu simbol-simbol OFDM dikonversikan lagi kedalam bentuk serial, dan kemudian sinyal dikirim. Sinyal yang terkirim tersebut, dalam persamaan matematik bisa diekspresikan sebagai berikut,  
+\begin{align}
+    \boxed{s(t) = Re \Big\{\sum_{n=-\infty}^{\infty} b_n f(t-nT)e^{j(\omega_0t+\psi)}\Big\}}\nonumber
+\end{align}
+
+Dimana Re(.) adalah bagian real dari persamaan, f(t) adalah respons implus dari filter transmisi, T adalah periode simbol, v o adalah frekuensi pembawa (carrier frequency) dalam bentuk radian, j adalah fase pembawa (carrier phase), dan bn adalah data informasi yang telah termodulasi yang menjadi input dari IDFT.  
+
+Gambar 1. Bagan Dasar OFDM   
+
+Untuk mempermudah, maka pembahasan mengenai keadaan sinyal ketika melewai jalur komunikasi (channel) akan dibahas pada bagian lain.  
+
+Sedangkan pada stasiun penerima, dilakukan operasi yang berkebalikan dengan apa yang dilakukan di stasiun pengirim. Mulai dari konversi dari serial ke parallel, kemudian konversi sinyal parallel dengan Fast Fourier Transform (FFT), setelah itu demodulasi, konversi parallel ke serial, dan akhirnya kembali menjadi bentuk data informasi.
+
+Apa yang dimaksud dengan Orthogonal ?
+Istilah orthogonal dalam Orthogonal Frequency Division Multiplexing (OFDM) mengandung makna hubungan matematis antara frekuensi-frekuensi yang digunakan. Dengan persamaan matematika bisa diekspresikan sebagai berikut, dua buah kumpulan sinyal dikatakan orthogonal bila,  
+\begin{align}
+    \boxed{\int_{a}^{b} \psi_p(t)*\psi_q(t)dt=0 }\nonumber
+\end{align}
+untuk:
+\begin{itemize}
+    \item $p \neq q$
+\end{itemize}
+\begin{align}
+    \boxed{\int_{a}^{b} \psi_p(t)*\psi_q(t)dt=K }\nonumber
+\end{align}
+untuk:
+\begin{itemize}
+    \item $p = q$
+\end{itemize}
+
+Pemakaian frekuensi yang saling orthogonal pada OFDM memungkinkan overlap antar frekuensi tanpa menimbulkan interferensi satu sama lain. Ada beberapa kumpulan sinyal yang orthogonal, salah satunya yang cukup sering kita gunakan adalah sinyal sinus, sebagaimana diperlihatkan pada gambar.2.  
 
 \end{document}
