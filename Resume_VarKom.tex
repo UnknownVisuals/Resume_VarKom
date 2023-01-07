@@ -13,6 +13,41 @@
 \fontsize{14pt}{0}
 \onehalfspacing
 
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+
+        \textbf{RESUME MATA KULIAH VARIABEL KOMPLEKS}
+
+        \vspace{0.5cm}
+        \textit{Resume ini diajukan untuk mememenuhi salah satu Tugas Akhir Mata Kuliah Variabel Kompleks}
+
+        \vspace{1.5cm}
+        \includegraphics[width=0.5\textwidth]{Telkom University Logo.png}
+
+        \vspace{1.5cm}
+        \textbf{Kelompok 1 TT4502:}\\
+        \begin{table}[H]
+            \begin{center}
+                \begin{tabular}{ll}
+                    Erni Dianti            & (1101213192) \\
+                    Rangga Aditia Permana  & (1101210019)\\
+                    Reynaldhi Tryana Graha & (1101213117) \\
+                    Shasyabilla Ardita H   & (1101210455)
+                    \end{tabular}
+                \end{center}
+            \end{table}
+        \vfill
+        \textbf{
+            FAKULTAS TEKNIK ELEKRO\\
+            TELKOM UNIVERSITY\\
+            BANDUNG\\
+            2023
+        }
+        \vspace*{1cm}
+    \end{center}
+\end{titlepage}
+
 \begin{center}
     \textbf{BILANGAN KOMPLEKS}
 \end{center}
@@ -1690,9 +1725,11 @@ Sifat aljabar dari konvolusi fungsi dan konvolusi transformasi:
 \end{enumerate}
 \leavevmode\\
 
+
+
 \newpage
 \begin{center}
-    \textbf{TABEL SIFAT-SIFAT TRANSFORMASI FOURIER}
+    \textbf{TABEL TRANSFORMASI FOURIER}
 \end{center}
 
 \begin{table}[H]
@@ -1714,9 +1751,6 @@ Sifat aljabar dari konvolusi fungsi dan konvolusi transformasi:
     \end{center}
 \end{table}
 
-
-
-\newpage
 \begin{center}
     \textbf{TABEL SIFAT-SIFAT TRANSFORMASI FOURIER}
 \end{center}
@@ -1739,11 +1773,13 @@ Sifat aljabar dari konvolusi fungsi dan konvolusi transformasi:
     \end{center}
 \end{table}
 
+
+
 \newpage
 \begin{center}
     \textbf{FAST FOURIER TRANSFORM (FFT) PADA OFDM}
 \end{center}
-\leavevmode\\
+\leavevmode
 
 Fast Fourier Transform (FFT) adalah sebuah algoritma yang digunakan untuk menghitung transformasi Fourier diskrit (DFT) dari suatu urutan data atau sinyal. Transformasi Fourier adalah sebuah teknik yang mengubah sinyal dari domain aslinya (seringkali waktu atau ruang) menjadi representasi dalam domain frekuensi. FFT mempercepat proses menghitung DFT dengan memfactorisasi matriks DFT menjadi produk faktor yang kosong (kebanyakan nol). Dengan demikian, FFT dapat mengurangi kompleksitas menghitung DFT dari $O(N^2)$ menjadi $O(N log N)$, di mana $N$ adalah ukuran data. FFT sangat berguna dalam berbagai aplikasi, termasuk pengolahan sinyal, pemrosesan citra, dan analisis spektrum frekuensi.
 Rumus FFT adalah sebagai berikut:
@@ -1759,39 +1795,93 @@ di mana:
     \item $i$ adalah bilangan imajiner $(i^2 = -1)$.
 \end{itemize}
 
-FFT menghitung DFT dengan memecah urutan data ke dalam bagian-bagian yang lebih kecil dan menghitung DFT dari setiap bagian tersebut secara terpisah. Kemudian, hasil dari setiap bagian tersebut digabungkan kembali untuk menghitung DFT dari urutan data yang lebih besar. Dengan menggunakan FFT, DFT dapat dihitung dengan kompleksitas $O(N log N)$ daripada $O(N^2)$ jika menggunakan definisi DFT secara langsung.
-\\
+FFT menghitung DFT dengan memecah urutan data ke dalam bagian-bagian yang lebih kecil dan menghitung DFT dari setiap bagian tersebut secara terpisah. Kemudian, hasil dari setiap bagian tersebut digabungkan kembali untuk menghitung DFT dari urutan data yang lebih besar. Dengan menggunakan FFT, DFT dapat dihitung dengan kompleksitas $O(N log N)$ daripada $O(N^2)$ jika menggunakan definisi DFT secara langsung.\\
 
-OFDM adalah sebuah teknik transmisi dengan banyak frekuensi (multicarrier), menggunakan Discrete Fourier Transfor (DFT). Bagan dasar dari OFDM ditampilkan pada. Cara kerjanya adalah sebagai berikut. Deretan data informasi yang akan dikirim dikonversikan kedalam bentuk parallel, sehingga bila bit rate semula adalah R , maka bit rate di tiap-tiap jalur parallel adalah R/M dimana M adalah jumlah jalur parallel (sama dengan jumlah sub-carrier). Setelah itu, modulasi dilakukan pada tiap-tiap sub-carrier. Modulasi ini bisa berupa BPSK, QPSK, QAM atau yang lain, tapi ketiga teknik tersebut sering digunakan pada OFDM. Kemudian sinyal yang telah termodulasi tersebut diaplikasikan ke dalam Inverse Discrete Fourier Transform (IDFT), untuk pembuatan simbol OFDM. Penggunaan IDFT ini memungkinkan pengalokasian frekuensi yang saling tegak lurus (orthogonal), mengenai hal ini akan dijelaskan lebih lanjut. Setelah itu simbol-simbol OFDM dikonversikan lagi kedalam bentuk serial, dan kemudian sinyal dikirim. Sinyal yang terkirim tersebut, dalam persamaan matematik bisa diekspresikan sebagai berikut,  
+\textbf{Orthogonal Frequency Division Multiplexing (OFDM)}
+
+Orthogonal Frequency Division Multiplexing (OFDM) adalah teknik modulasi untuk komunikasi wireless broadband dimasa yang akan datang karena tahan melawan frekuensi selective fading dan interferensi narrowband dan efisien menghadapi multi-path delay spread. Untuk mencapai hal tersebut, OFDM membagi aliran data high-rate mejadi aliran rate yang lebih rendah, yang kemudian dikirimkan secara bersama pada beberapa sub-carrier. Dengan melakukan hal tersebut , durasi symbol meningkat. Keuntungan dari hal tersebut adalah jumlah dispersi waktu yang disebabkan oleh multi-path delay spread menurun secara signifikan. Selain itu, pengenalan guard time pada setiap symbol OFDM meneliminasi Inter-Symbol Interference (ISI). Pada guard time, symbol OFDM secara siklus diperpanjang untuk mengurangi Inter-Carrier Interference (ICI). OFDM dapat dianggap baik sebagai metode multiplexing maupun metode modulasi. Seperti yang telah dijelaskan di atas, OFDM menggunakan sub-carrier yang banyak untuk mengirimkan aliran data low rate secara parallel. Sub-carrier dimodulasikan sendiri dengan menggunakan Phase Shift Keying (PSK) atau Quadrature Amplitude Modulation (QAM) dan dibawa pada microwave carrier berfrekuensi tinggi (5 GHz). Hal ini sama dengan Frequency Division Multiplexing (FDM) konvensional atau Sub-Carrier Multiplexing, kecuali untuk kebutuhan ke-orthogonal-an antara setiap sub-carrier. Sub-carrier secara orthogonal dapat dilihat dengan dua cara, dalam domain waktu dan frekuensi. Pada domain waktu, setiap sub-carrier harus berupa bilangan integer dari siklus selama tiap interval (durasi) symbol OFDM.
+
+Dengan kata lain, jumlah siklus antara sub-carrier berbeda yang bersebelahan. Pada domain frekuensi, spectra amplituda dari masing-masing sub-carrier (baik modulasi PSK maupun QAM) overlap. Bagaimanapun, pada setiap spektrum sub-carrier dalam keadaan maksimum, spectral sub-carrier lainnya berada pada nol. Penerima OFDM menghitung nilai spektrum pada titik maksimum dari masing-masing subcarrier, hal ini dapat memulihkan setiap sub-carrier tanpa interferensi ICI dari sub-carrier lainnya.
+
+Dasar sinyal OFDM dibentuk menggunakan Inverse Fast Fourier Transform (IFFT), penambahan cyclic extension dan menampilkan penjendelaan untuk mendapatkan roll off yang lebih curam. Pada penerima, sub-carrier dimodulasi dengan menggunakan Fast Fourier Transform (FFT). Jika dibandingkan dengan system modulasi single carrier, OFDM lebih sensitive terhadap frekuensi offset dan noise phasa. Selain itu OFDM relatif mempunyai rasio data peak-to-avarege yang lebih tinggi, yang mereduksi efisiensi daya RF amplifier.
+
+Pada saat ini, OFDM telah dijadikan standar dan dioperasikan di Eropa yaitu pada proyek DAB (Digital Audio Broadcast), selain itu juga digunakan pada HDSL (High Bit-rate Digital Subscriber Lines; 1.6 Mbps), VHDSL (Very High
+Speed Digital Subscriber Lines; 100 Mbps), HDTV (High Definition Television) dan juga komunikasi radio. Teknologi ini sebenarnya sudah pernah diusulkan pada sekitar tahun 1950, dan penyusunan teori-teori dasar dari OFDM sudah
+selesai sekitar tahun 1960. Pada tahun 1966, OFDM telah dipatenkan di Amerika. Kemudian pada tahun 1970-an, muncul beberapa paper yang mengusulkan untuk mengaplikasikan DFT (Discrete Fourier Transform) pada OFDM, dan sejak tahun 1985 muncul beberapa paper yang memikirkan pengaplikasian teknologi OFDM ini pada komunikasi wireless.
+
+Perbedaan antara teknik multicarrier non-carrier konvensional dan teknik modulasi multicarrier orthogonal, teknik ini dapat menghemat hampir 50\% bandwidth.\\
+
+\textbf{Konsep Orthogonalitas}
+
+Sinyal-sinyal dikatakan saling tegak lurus (orthogonal) jika sinyal yang satu dengan yang lainnya saling berdiri sendiri. Istilah orthogonal di dalam OFDM mengimplikasikan hubungan yang tetap dan terdefinisi diantara semua
+carrier pada rangkaian. Carrier-carrier tersebut diatur sedemikian rupa sehingga sideband dari tiap carrier overlap dan dapat diterima tanpa adanya intercarrier interference. Syarat dua sinyal dikatakan orthogonal jika:
 \begin{align}
-    \boxed{s(t) = Re \Big\{\sum_{n=-\infty}^{\infty} b_n f(t-nT)e^{j(\omega_0t+\psi)}\Big\}}\nonumber
+    \int_{0}^{T}cos(2\pi f_{1}t+\phi )cos(2\pi f_{2}t)dt=0
+    \nonumber
 \end{align}
 
-Dimana Re(.) adalah bagian real dari persamaan, f(t) adalah respons implus dari filter transmisi, T adalah periode simbol, v o adalah frekuensi pembawa (carrier frequency) dalam bentuk radian, j adalah fase pembawa (carrier phase), dan bn adalah data informasi yang telah termodulasi yang menjadi input dari IDFT.  
-
-Gambar 1. Bagan Dasar OFDM   
-
-Untuk mempermudah, maka pembahasan mengenai keadaan sinyal ketika melewai jalur komunikasi (channel) akan dibahas pada bagian lain.  
-
-Sedangkan pada stasiun penerima, dilakukan operasi yang berkebalikan dengan apa yang dilakukan di stasiun pengirim. Mulai dari konversi dari serial ke parallel, kemudian konversi sinyal parallel dengan Fast Fourier Transform (FFT), setelah itu demodulasi, konversi parallel ke serial, dan akhirnya kembali menjadi bentuk data informasi.
-
-Apa yang dimaksud dengan Orthogonal ?
-Istilah orthogonal dalam Orthogonal Frequency Division Multiplexing (OFDM) mengandung makna hubungan matematis antara frekuensi-frekuensi yang digunakan. Dengan persamaan matematika bisa diekspresikan sebagai berikut, dua buah kumpulan sinyal dikatakan orthogonal bila,  
+Dengan mengintegralkan persamaan diatas, maka :
 \begin{align}
-    \boxed{\int_{a}^{b} \psi_p(t)*\psi_q(t)dt=0 }\nonumber
+    \cos \phi \left[ \frac{\sin (f_1 + f_2)T}{2\pi (f_1 + f_2)} + \frac{\sin (2\pi (f_1 - f_2))T}{2\pi (f_1 - f_2)} \right] + \sin \phi \left[ \frac{\cos (2\pi (f_1 + f_2))T - 1}{2\pi (f_1 + f_2)} + \frac{\cos (2\pi (f_1 - f_2))T - 1}{2\pi (f_1 - f_2)} \right] = 0
+    \nonumber
 \end{align}
-untuk:
-\begin{itemize}
-    \item $p \neq q$
-\end{itemize}
-\begin{align}
-    \boxed{\int_{a}^{b} \psi_p(t)*\psi_q(t)dt=K }\nonumber
-\end{align}
-untuk:
-\begin{itemize}
-    \item $p = q$
-\end{itemize}
 
-Pemakaian frekuensi yang saling orthogonal pada OFDM memungkinkan overlap antar frekuensi tanpa menimbulkan interferensi satu sama lain. Ada beberapa kumpulan sinyal yang orthogonal, salah satunya yang cukup sering kita gunakan adalah sinyal sinus, sebagaimana diperlihatkan pada gambar.2.  
+Karena $\sin(n\pi )=0$ dan $\cos (2n\pi)=1$ dengan n adalah bilangan bulat dan dengan mengasumsikan $(f_{1}+f_{2})T$ adalah bilangan bulat, maka dua suku dalam persamaan diatas dapat dihilangkan, karena:\\\\
+\begin{align}
+    sin(2\pi(f_{1}+f_{2}))T=0
+    \nonumber
+\end{align}
+
+dan
+\begin{align}
+    cos(2\pi(f_{1}+f_{2}))T=1
+    \nonumber
+\end{align}
+
+Sehingga persamaan dapat disederhanakan menjadi:
+\begin{align}
+    \cos \phi \left[ \frac{\sin (2\pi (f_1 - f_2))T}{2\pi (f_1 - f_2)} \right] + \sin \phi \left[ \frac{\cos (2\pi (f_1 - f_2))T - 1}{2\pi (f_1 - f_2)} \right] = 0
+    \nonumber
+\end{align}
+
+Untuk sembarang nilai $\phi$ dari 0 sampai $2\pi$, untuk persamaan diatas maka suku cosinus harus bernilai 1 dan suku sinus harus bernilai 0 sehingga:
+\begin{align}
+    2\pi(f_{1}-f_{2})T=2n\pi
+    \nonumber
+\end{align}
+
+serta
+\begin{align}
+    (f_{1}-f_{2})=\frac{1}{T}
+    \nonumber
+\end{align}
+
+Untuk $\phi = 0$, untuk kondisi ini suku kedua persamaan sudah bernilai 0, karena $\sin 0 = 0$. Untuk menyelesaikan suku pertama maka:
+\begin{align}
+    2\pi(f_{1}-f_{2})T=n\pi
+    \nonumber
+\end{align}
+
+serta
+\begin{align}
+    (f_{1}-f_{2})=\frac{n}{T}
+    \nonumber
+\end{align}
+
+Nilai minimum adalah ketika $n=1$, sehingga:
+\begin{align}
+    (f_{1}-f_{2})=\frac{1}{2T}
+    \nonumber
+\end{align}
+
+Jadi dapat disimpulkan jika beda fasa antara dua sinyal tidak diketahui maka kedua sinyal tersebut harus berbeda frekuensi sebesar $1/T$ supaya orthogonal, sedangkan beda fasa antara kedua sinyal adalah nol maka harus berbeda frekuensi sebesar $1/2T$ supaya orthogonal.\\
+
+\textbf{Inverse Fast Fourier Transform (IFFT)}
+
+IFFT mengubah sebuah spektrum (amplitudo dan fasa dari setiap komponen) ke bentuk sinyal dalam domain waktu. IFFT mengubah sejumlah titik data kompleks, kedalam domain waktu dengan jumlah titik yang sama. Setiap titik data dalam spektrum frekuensi yang digunakan pada FFT atau IFFT disebut dengan bin. Orthogonal carrier digunakan untuk sinyal OFDM dapat dengan mudah disamakan dengan mengatur amplitudo dan fasa dari setiap bin-IFFT, kemudian dilakukan proses IFFT. Ketika setiap bin-IFFT diatur amplitudo dan fasanya pada gelombang sinusoidal orthogonal, proses yang berkebalikan menjamin bahwa carrier tetap orthogonal.\\
+
+\textbf{Fast Fourier Transform (FFT)}
+
+FFT melakukan proses berkebalikan, mengubah sinyal dalam domain waktu kebentuk spektrum frekuensi yang ekuivalen. Hal ini dilakukan dengan menemukan bentuk sinyal yang ekuivalen, yaitu dengan menjumlahkan komponen-komponen sinyal sinus yang saling orthogonal. Amplitudo dan fasa dari komponen-komponen sinusoidal merepresentasikan spektrum frekuensi dari sinyal domain waktu.
 
 \end{document}
